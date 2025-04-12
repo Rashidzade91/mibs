@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'D-sb';
+  src: url('./fonts/DMSans-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'D-b';
+  src: url('./fonts/DMSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'D-r';
+  src: url('./fonts/DMSans-Regular.ttf');
+}
+
+:root {
+ --color_white-a: #f1f5f7;
+ --color_black-a:  #000000;
+ --color_nav-black: #0F121B;
+ --color_nav-white: #00000014;
+}
+
