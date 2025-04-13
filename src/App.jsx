@@ -1,18 +1,31 @@
-import './App.css'
-import Nav_black from './components/Nav_black'
-import logo_white from './Photos/logo_white.svg'
-// import Nav_white from './components/Nav_white'
-// import logo_black from './Photos/logo_white.svg'
-
+import { createBrowserRouter, RouterProvider } from "react-router";
+import "./App.css";
+import Biz_kimik from "./components/Biz_kimik";
+import Portfolio from "./components/Portfolio";
+import Xidmetler from "./components/Xidmetler";
+import ErrorPage from "./components/ErrorPage";
+import Layout from "./components/Layout";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <ErrorPage />,
+      children: [
+        {path: '/', element: <Biz_kimik />},
+        { path: "/Biz_kimik", element: <Biz_kimik /> },
+        { path: "/Portfolio", element: <Portfolio /> },
+        { path: "/Xidmetler", element: <Xidmetler /> },
+      ],
+    },
+  ]);
 
   return (
     <>
-     <Nav_black  name = {logo_white}/>
-     {/* <Nav_white photo={logo_black}/> */}
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

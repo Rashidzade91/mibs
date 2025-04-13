@@ -23,4 +23,7 @@
  --color_nav-black: #0F121B;
  --color_nav-white: #00000014;
 }
+.active{
+  color: rgb(238, 238, 18) !important;
+}
 
