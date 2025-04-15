@@ -1,29 +1,40 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'D-sb';
-  src: url('./fonts/DMSans-SemiBold.ttf');
+  font-family: "d-sb";
+  src: url("./fonts/DMSans-SemiBold.ttf");
 }
 @font-face {
-  font-family: 'D-b';
-  src: url('./fonts/DMSans-Bold.ttf');
+  font-family: "d-b";
+  src: url("./fonts/DMSans-Bold.ttf");
 }
 @font-face {
-  font-family: 'D-r';
-  src: url('./fonts/DMSans-Regular.ttf');
+  font-family: "d-r";
+  src: url("./fonts/DMSans-Regular.ttf");
 }
 
 :root {
- --color_white-a: #f1f5f7;
- --color_black-a:  #000000;
- --color_nav-black: #0F121B;
- --color_nav-white: #00000014;
+  --text_black: #000000;
+  --text_white: #FFFFFF;
+  --theme_black: #0f121b;
+  --theme_white: #f1f5f7;
+  --footer_text_color: #9CACB4;
 }
-.active{
+.active {
   color: rgb(238, 238, 18) !important;
 }
+@media (min-width: 1360px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1330px !important;
+  }
+}
+
 

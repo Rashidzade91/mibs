@@ -1,4 +1,4 @@
-export default function Xidmetler() {
+export default function Services() {
   return (
     <>
       <h1>Xidmetler</h1>

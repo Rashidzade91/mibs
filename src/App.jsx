@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import "./App.css";
-import Biz_kimik from "./components/Biz_kimik";
-import Portfolio from "./components/Portfolio";
-import Xidmetler from "./components/Xidmetler";
 import ErrorPage from "./components/ErrorPage";
 import Layout from "./components/Layout";
+import Portfolio from "./components/portfolio";
+import Who from "./components/who";
+import Services from "./components/services";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,10 +13,10 @@ function App() {
       element: <Layout />,
       errorElement: <ErrorPage />,
       children: [
-        {path: '/', element: <Biz_kimik />},
-        { path: "/Biz_kimik", element: <Biz_kimik /> },
-        { path: "/Portfolio", element: <Portfolio /> },
-        { path: "/Xidmetler", element: <Xidmetler /> },
+        {path: '/', element: <Who />},
+        { path: "/who", element: <Who /> },
+        { path: "/portfolio", element: <Portfolio /> },
+        { path: "/services", element: <Services /> },
       ],
     },
   ]);
