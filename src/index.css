@@ -23,6 +23,7 @@
   --theme_black: #0f121b;
   --theme_white: #f1f5f7;
   --footer_text_color: #9CACB4;
+  --card_color: #F8F9FB;
 }
 .active {
   color: rgb(238, 238, 18) !important;

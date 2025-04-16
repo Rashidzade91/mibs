@@ -1,5 +1,6 @@
 import classes from "./index.module.css";
 import logo_white from "../../assets/logo_white.svg";
+import logo_black from '../../assets/logo_black.svg'
 import { Link, NavLink, useLocation } from "react-router";
 import { useState } from "react";
 
@@ -13,12 +14,12 @@ export default function Header() {
   };
 
   return (
-    <header className={isWhite ? classes.black_header : white_header}>
+    <header className={isWhite ? classes.black_header : classes.white_header}>
       <div className="container">
         <div className="row">
           <div className={classes.header_container}>
             <a href="#" className={classes.logo}>
-              <img src={logo_white} alt="" />
+              <img src={isWhite ? logo_white : logo_black} alt="" />
             </a>
             <nav className={classes.navbar}>
               <NavLink

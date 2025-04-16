@@ -1,0 +1,36 @@
+.projects {
+  background-color: var(--theme_white);
+  .main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 21px;
+    .card {
+      background-color: var(--card_color);
+      padding: 40px;
+      .card_main {
+        p {
+          font-size: 18px;
+          font-family: "d-r";
+          line-height: 150%;
+        }
+      }
+      .card_head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        button {
+          background-color: var(--text_white);
+          padding: 20px;
+          border-radius: 32px;
+        }
+        p {
+          font-family: "d-r";
+          font-size: 14px;
+          line-height: 125%;
+          color: #106594;
+        }
+      }
+    }
+  }
+}
+

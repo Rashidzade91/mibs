@@ -23,6 +23,13 @@
 }
 .white_header {
   background-color: var(--theme_white);
+  .navbar > a{
+    color: var(--text_black);
+  }
+  .logo{
+    width: 160px;
+    height: 50px;
+  }
 }
 .header_container {
   display: flex;
