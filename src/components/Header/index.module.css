@@ -23,10 +23,16 @@
 }
 .white_header {
   background-color: var(--theme_white);
-  .navbar > a{
+  .navbar > a {
     color: var(--text_black);
   }
-  .logo{
+  button {
+    background-color: var(--theme_white);
+    .item1 , .item2 , .item3{
+      background-color: var(--text_black);
+    }
+  }
+  .logo {
     width: 160px;
     height: 50px;
   }
@@ -50,20 +56,20 @@
   right: 0;
   top: 100%;
   border-radius: 2px;
-  a{
+  a {
     text-decoration: none;
     color: var(--text_black);
     font-size: 20px;
     line-height: 100%;
   }
-  .info{
+  .info {
     display: flex;
     flex-direction: column;
     align-items: end;
     margin-top: 10%;
-    a{
+    a {
       font-size: 16px;
-      font-family: 'd-r';
+      font-family: "d-r";
       line-height: 160%;
       text-decoration: underline;
     }

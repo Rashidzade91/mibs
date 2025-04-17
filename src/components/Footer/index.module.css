@@ -7,7 +7,6 @@
 .footer_container{
   background-color: var(--theme_black);
   padding: 80px 0;
-  margin-top: 250px;
 }
 .footer_menu {
   display: flex;
