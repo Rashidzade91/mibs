@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Header() {
   const { pathname } = useLocation();
-  const whiteRoutes = ["/who", "/services", "/portfolio"];
+  const whiteRoutes = ["/who", "/services"];
   const isWhite = whiteRoutes.includes(pathname);
   const [show, setShow] = useState(false);
   const toggleDropdown = () => {

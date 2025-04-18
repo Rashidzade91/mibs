@@ -30,9 +30,7 @@ export default function Projects() {
                   </div>
                   <div className={classes.card_main}>
                     <h4>FEX.az</h4>
-                    <p>
-                      {item.title}
-                    </p>
+                    <p>{item.title}</p>
                   </div>
                 </div>
                 <div className={classes.card}>
@@ -44,9 +42,7 @@ export default function Projects() {
                   </div>
                   <div className={classes.card_main}>
                     <h4>BTUM.EDU.az</h4>
-                    <p>
-                      {item.heading}
-                    </p>
+                    <p>{item.heading}</p>
                   </div>
                 </div>
                 <div className={classes.card}>
@@ -72,9 +68,7 @@ export default function Projects() {
                   </div>
                   <div className={classes.card_main}>
                     <h4>KOB İnvestisiya portalı</h4>
-                    <p>
-                      {item.desc}
-                    </p>
+                    <p>{item.desc}</p>
                   </div>
                 </div>
                 <div className={classes.card}>
@@ -89,9 +83,7 @@ export default function Projects() {
                   </div>
                   <div className={classes.card_main}>
                     <h4>Ombudsman Aparatı</h4>
-                    <p>
-                      {item.title}
-                    </p>
+                    <p>{item.title}</p>
                   </div>
                 </div>
                 <div className={classes.card}>
@@ -103,9 +95,7 @@ export default function Projects() {
                   </div>
                   <div className={classes.card_main}>
                     <h4>SR Construction</h4>
-                    <p>
-                      {item.desc}
-                    </p>
+                    <p>{item.desc}</p>
                   </div>
                 </div>
               </div>
