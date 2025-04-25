@@ -87,7 +87,7 @@ export default function Who() {
                     Ətraflı məlumat vəya bizimlə bir layihəyə başlamaq üçün
                     bizimlə əlaqə saxlayın
                   </p>
-                  <div className={classes.item4_btn}>
+                  <div className={classes.btn}>
                     <button>Müraciət et</button>
                   </div>
                 </div>

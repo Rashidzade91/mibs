@@ -49,8 +49,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 54px;
+    padding-bottom: 266px;
     .item1 {
-      padding: 5px;
+      padding: 30px;
       background-color: #9e9e9e1f;
       gap: 20px;
       h3 {
@@ -74,12 +75,15 @@
       }
     }
     .item2 {
-      font-size: 42px;
-      line-height: 125%;
-      font-family: "d-r";
       display: flex;
       justify-content: center;
       align-items: center;
+      h2 {
+        font-size: 38px;
+        line-height: 125%;
+        font-family: "d-r";
+        color: #37515d;
+      }
     }
     .item3 {
       display: flex;
@@ -105,7 +109,17 @@
       display: flex;
       flex-direction: column;
       gap: 44px;
-
+      .btn {
+        display: flex;
+        justify-content: right;
+        button {
+          background-color: #fddd0d;
+          width: 132px;
+          border-radius: 45px;
+          border: none;
+          padding: 10px 0;
+        }
+      }
       h3 {
         font-size: 32px;
         line-height: 125%;
@@ -127,12 +141,4 @@
     }
   }
 }
-.item4_btn {
-  display: flex;
-  justify-content: right;
-  button {
-    background-color: #fddd0d;
-    width: 132px;
-    border-radius: 45px;
-  }
-}
+

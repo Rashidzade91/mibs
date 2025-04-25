@@ -1,17 +1,32 @@
 import classes from "./index.module.css";
 import logo_white from "../../assets/logo_white.svg";
-import logo_black from '../../assets/logo_black.svg'
+import logo_black from "../../assets/logo_black.svg";
 import { Link, NavLink, useLocation } from "react-router";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const { pathname } = useLocation();
-  const whiteRoutes = ["/who", "/services"];
+  const whiteRoutes = ["/who", "/services", "/development", "/home", "/", ""];
   const isWhite = whiteRoutes.includes(pathname);
+
   const [show, setShow] = useState(false);
+  const menuRef = useRef(null);
   const toggleDropdown = () => {
     setShow(!show);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setShow(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className={isWhite ? classes.black_header : classes.white_header}>
@@ -49,7 +64,7 @@ export default function Header() {
               </button>
             </nav>
             {show ? (
-              <div className={classes.dropdown_links}>
+              <div className={classes.dropdown_links} ref={menuRef}>
                 <Link to="./who">Biz kimik?</Link>
                 <a href="">Filiallar</a>
                 <a href="">Menyu</a>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import classes from "./index.module.css";
-import background from "../../assets/background.png";
 
 export default function Portfolio() {
   const [formData, setFormData] = useState({
@@ -100,14 +99,15 @@ export default function Portfolio() {
       </div>
 
       <div style={{ padding: "70px  0", backgroundColor: "#8398A24D" }}>
-        <div className="container" style={{}}>
+        <div className="container">
           <div className={classes.text_title}>
             <h4>
               Fikirlərinizi bölüşmək və ya sual vermək <br /> istəyirsinizsə,
               bizə zəng edin və ya e-poçt göndərin.
             </h4>
           </div>
-          <div className={classes.map_data}>
+
+          <div className={classes.contact_data}>
             <div className="row">
               <div className={classes.contact_text}>
                 <div>
@@ -132,15 +132,13 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="row">
-              <section>
-                <iframe
-                  className={classes.map_frame}
-                  src="https://www.google.com/maps?q=Ə.+Rəcəbli+11b,+Bakı&output=embed"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </section>
+              <iframe
+                className={classes.map_frame}
+                src="https://www.google.com/maps?q=Ə.+Rəcəbli+11b,+Bakı&output=embed"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
