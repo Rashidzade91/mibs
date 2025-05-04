@@ -32,9 +32,12 @@ export default function About() {
 
         <div className="row">
           <div className={classes.platform}>
-            <div className="img">
+           <div className="col-md-6">
+           <div className={classes.img_div}>
               <img src={platform} alt="" />
             </div>
+           </div>
+            <div className="col-md-6">
             <div>
               <div className={classes.about_project}>
                 <h2>Layihə haqqında</h2>
@@ -42,10 +45,10 @@ export default function About() {
                   Keçid linki:{" "}
                   <a href="http:invest.smb.gov.az">http:invest.smb.gov.az</a>
                 </p>
-                <p>
-                  Alətlər: <span>Web dizayn</span>{" "}
-                  <span>Web proqramlaşdırma</span>
-                </p>
+                <p>Alətlər:</p>
+                <span>Web dizayn</span>{" "}
+                <span>Web proqramlaşdırma</span>
+                
                 <p>
                   Layihənin adı:  <small>KOB İnvestisiya portalı</small>
                 </p>
@@ -92,6 +95,8 @@ export default function About() {
                 </div>
               </div>
             </div>
+            </div>
+
           </div>
         </div>
 
@@ -99,7 +104,7 @@ export default function About() {
           <div className={classes.other_project}>
             <p>Digər layihələr</p>
             <button>
-              <span>Daha ətraflı</span> <CgArrowBottomRight />{" "}
+              <span>Daha ətraflı</span> <CgArrowBottomRight className={classes.icon}/>{" "}
             </button>
           </div>
         </div>

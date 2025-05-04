@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className={classes.footer_section}>
-            <div className="img">
-              <img src={logo_white} alt="" />
+            <div className={classes.img_div}>
+              <img src={logo_white} alt=""/>
             </div>
             <div className={classes.footer_menu}>
               <ul>

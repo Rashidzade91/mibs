@@ -1,44 +1,100 @@
 .footer_container {
   background-color: var(--theme_black);
   padding: 80px 0;
+}
+
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--theme_black);
+  padding: 30px 54px;
+}
+
+.footer_menu {
+  display: flex;
+  gap: 80px;
+}
+
+.footer_menu ul {
+  list-style-type: none;
+  color: var(--footer_text_color);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer_menu a {
+  text-decoration: none;
+  color: var(--footer_text_color);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 125%;
+  font-family: "d-r";
+}
+
+.footer_menu .li_head {
+  color: var(--text_white);
+  font-size: 22px;
+  line-height: 125%;
+}
+
+/* Footer End */
+.footer_end {
+  font-family: "d-b";
+  color: var(--footer_text_color);
+  font-size: 31px;
+  line-height: 150%;
+}
+
+/* Copyright */
+.copyright {
+  font-family: "d-r";
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--footer_text_color);
+}
+
+/* Responsiv dizayn (576px-dən aşağı) */
+@media (max-width: 576px) {
   .footer_section {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--theme_black);
-    padding: 30px 54px;
-    .footer_menu {
-      display: flex;
-      gap: 80px;
-      ul {
-        list-style-type: none;
-        color: var(--footer_text_color);
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        a {
-          text-decoration: none;
-          color: var(--footer_text_color);
-          cursor: pointer;
-          font-size: 18px;
-          line-height: 125%;
-          font-family: "d-r";
-        }
-      }
-      .li_head {
-        color: var(--text_white);
-      }
-    }
+    flex-direction: column;
+    padding: 15px;
   }
+
+  .footer_section .img_div {
+    padding: 32px 0;
+  }
+
+  .footer_section .img_div img {
+    width: 185px;
+    height: 32px;
+  }
+
+  .footer_menu {
+    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_menu ul {
+    gap: 12px;
+  }
+
+  .footer_menu .li_head {
+    font-size: 20px;
+  }  
+
+  .footer_menu a {
+    font-size: 16px;
+  }
+
   .footer_end {
-    font-family: "d-b";
-    color: var(--footer_text_color);
-    font-size: 31px;
-    line-height: 150%;
+    font-size: 16px;
+    line-height: 125%;
   }
+
   .copyright {
-    font-family: "d-r";
-    font-size: 14px;
-    line-height: 100%;
-    color: var(--footer_text_color);
+    font-size: 12px;
   }
 }
+

@@ -1,0 +1,286 @@
+.background {
+  background-image: url(../../assets/background.png);
+  background-size: cover;
+  padding: 10px;
+}
+
+.contact_form {
+  max-width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  border: 1px solid #9cacb466;
+  font-family: "d-r";
+  font-size: 24px;
+  line-height: 125%;
+}
+
+.contact_form .title {
+  border-bottom: 2px solid #9cacb466;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.contact_form h2 {
+  font-size: 44px;
+  font-family: "d-b";
+  line-height: 125%;
+  color: var(--theme_black);
+}
+
+.contact_form .input_group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.contact_form input,
+.contact_form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact_form textarea {
+  resize: vertical;
+  min-height: 100px;
+  width: 100%;
+}
+
+.contact_form .submit_button {
+  width: 100%;
+  padding: 30px;
+  background-color: #fddd0d;
+  color: var(--theme_black);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+  font-family: "d-r";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact Frame */
+.contact_frame {
+  padding: 70px 0;
+  background-color: #8398a24d;
+}
+
+.contact_frame .contact_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact_frame .contact_text div {
+  padding: 20px 0;
+  display: inline-block;
+  width: 80%;
+  border-bottom: 1px solid #8398a24d;
+}
+
+.contact_frame .contact_text h4 {
+  font-size: 24px;
+  font-family: d-r;
+  line-height: 125%;
+  color: #8398a2;
+}
+
+.contact_frame .contact_text a {
+  font-size: 20px;
+  line-height: 125%;
+  font-family: "d-r";
+  text-decoration: none;
+  color: var(--theme_black);
+}
+
+.contact_frame .map_frame {
+  width: 100%;
+  height: 496px;
+  border: 1px solid #106594;
+  border-radius: 4px;
+}
+
+.contact_frame .text_title {
+  padding: 70px 0;
+}
+
+.contact_frame .text_title h4 {
+  font-size: 28px;
+  line-height: 150%;
+  font-family: "d-r";
+}
+
+/* Responsivlik üçün Media Queries */
+@media (max-width: 1200px) {
+  .contact_form {
+    max-width: 85%;
+    padding: 2rem;
+  }
+
+  .contact_form h2 {
+    font-size: 40px;
+  }
+
+  .contact_form .submit_button {
+    padding: 25px;
+    font-size: 22px;
+  }
+
+  .contact_frame .contact_text div {
+    width: 80%;
+  }
+
+  .contact_frame .map_frame {
+    height: 450px;
+  }
+
+  .contact_frame .contact_text h4 {
+    font-size: 24px;
+  }
+
+  .contact_frame .contact_text a {
+    font-size: 20px;
+  }
+
+  .contact_frame .text_title h4 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact_form {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .contact_form .title {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact_form h2 {
+    font-size: 36px;
+  }
+
+  .contact_form .input_group input,
+  .contact_form .input_group textarea {
+    font-size: 1rem;
+  }
+
+  .contact_form .submit_button {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .contact_frame .contact_text div {
+    width: 100%;
+  }
+
+  .contact_frame .map_frame {
+    height: 400px;
+  }
+
+  .contact_frame .contact_text h4 {
+    font-size: 22px;
+  }
+
+  .contact_frame .contact_text a {
+    font-size: 18px;
+  }
+
+  .contact_frame .text_title h4 {
+    font-size: 26px;
+  }
+}
+
+
+/* Tablet (768px və daha kiçik cihazlar) */
+@media (max-width: 768px) {
+  .contact_form {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .contact_form .title {
+    margin-bottom: 1rem;
+  }
+
+  .contact_form h2 {
+    font-size: 32px;
+  }
+
+  .contact_form .input_group input,
+  .contact_form .input_group textarea {
+    font-size: 1rem;
+  }
+
+  .contact_form .submit_button {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .contact_frame .contact_text div {
+    width: 100%;
+  }
+
+  .contact_frame .map_frame {
+    height: 350px;
+  }
+
+  .contact_frame .contact_text h4 {
+    font-size: 20px;
+  }
+
+  .contact_frame .contact_text a {
+    font-size: 18px;
+  }
+
+  .contact_frame .text_title h4 {
+    font-size: 24px;
+  }
+}
+
+/* Mobil (576px və daha kiçik cihazlar) */
+@media (max-width: 576px) {
+  .contact_form h2 {
+    font-size: 24px;
+  }
+
+  .contact_form .input_group input,
+  .contact_form .input_group textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact_form .submit_button {
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .contact_frame {
+    background-color: var(--text_white);
+    padding: 16px;
+  }
+
+  .contact_frame .contact_text div {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .contact_frame .contact_text h4 {
+    font-size: 20px;
+  }
+
+  .contact_frame .contact_text a {
+    font-size: 18px;
+  }
+
+  .contact_frame .text_title h4 {
+    font-size: 20px;
+  }
+}

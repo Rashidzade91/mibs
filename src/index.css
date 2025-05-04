@@ -16,6 +16,10 @@
   font-family: "d-r";
   src: url("./fonts/DMSans-Regular.ttf");
 }
+@font-face {
+  font-family: "l-sb";
+  src: url("./fonts/LeagueSpartan-SemiBold.ttf");
+}
 
 :root {
   --text_black: #000000;

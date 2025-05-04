@@ -1,31 +1,175 @@
 .projects {
   background-color: var(--theme_white);
-  .projects_head{
-    padding: 60px 0;
-    h1{
-      font-size: 76px;
-      font-family: 'd-b';
-      line-height: 125%;
-      color: var(--theme_black);
-      display: inline;
-      p{
-        font-size: 16px;
-        line-height: 150%;
-        font-family: 'd-r';
-      }
-      span{
-        font-size: 76px;
-        font-family: 'd-b';
-        line-height: 125%;
-        color: #106594;
-      }
-    }
+}
+
+.projects .projects_head {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .projects_head h1 {
+  font-size: 76px;
+  font-family: 'd-b';
+  line-height: 125%;
+  color: var(--theme_black);
+}
+
+.projects .projects_head h2 {
+  font-size: 76px;
+  font-family: 'd-b';
+  line-height: 125%;
+  color: var(--theme_black);
+}
+
+.projects .projects_head h2 p {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: 'd-r';
+  position: relative;
+  bottom: -30px;
+  margin-left: 20px;
+}
+
+.projects .projects_head h1 span {
+  font-size: 76px;
+  font-family: 'd-b';
+  line-height: 125%;
+  color: #106594;
+}
+
+.projects .main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 80px 0;
+  gap: 21px;
+}
+
+@media (max-width: 1200px) {
+  .projects .projects_head h1 {
+    font-size: 60px; 
   }
-  .main_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 80px 0;
-    gap: 21px;
+
+  .projects .projects_head h2 {
+    font-size: 60px;
+  }
+
+  .projects .projects_head h1 span {
+    font-size: 60px; 
+  }
+
+  .projects .projects_head h2 p {
+    bottom: -15px;
+  }
+
+  .projects .main_container {
+    padding: 10px 0; /* Yuxarı və aşağı paddingi kiçiltmək */
+  }
+
+  .projects .main_container .col {
+    margin-bottom: 20px; /* Kartların arasına boşluq əlavə etmək */
+  }
+
+  .projects .projects_head h1 {
+    text-align: center; /* H1 başlığını mərkəzə gətirmək */
+  }
+}
+
+@media (max-width: 991px) {
+  .projects .projects_head h1 {
+    font-size: 40px; /* H1 başlığının ölçüsünü kiçiltmək */
+  }
+
+  .projects .projects_head h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+
+  .projects .projects_head h1 span {
+    font-size: 40px; /* Span-in font ölçüsünü kiçiltmək */
+  }
+
+  .projects .main_container {
+    padding: 10px 0; /* Yuxarı və aşağı paddingi kiçiltmək */
+  }
+
+  .projects .main_container .col {
+    margin-bottom: 20px; /* Kartların arasına boşluq əlavə etmək */
+  }
+
+  .projects .projects_head h1 {
+    text-align: center; /* H1 başlığını mərkəzə gətirmək */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects .projects_head h1 {
+    font-size: 26px; /* H1 başlığının ölçüsünü kiçiltmək */
+  }
+
+  .projects .projects_head h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+  }
+
+  .projects .projects_head h1 span {
+    font-size: 26px; /* Span-in font ölçüsünü kiçiltmək */
+  }
+
+  .projects .main_container {
+    grid-template-columns: 1fr 1fr; /* 1 kolona keçid */
+    padding: 20px 0; /* Yuxarı və aşağı paddingi kiçiltmək */
+  }
+
+  .projects .main_container .col {
+    margin-bottom: 20px; /* Kartların arasına boşluq əlavə etmək */
+  }
+
+  .projects .projects_head h1 {
+    text-align: center; /* H1 başlığını mərkəzə gətirmək */
+  }
+}
+
+@media (max-width: 576px) {
+  .projects .projects_head h1 {
+    font-size: 24px; /* H1 başlığının ölçüsünü kiçiltmək */
+  }
+
+  .projects .projects_head h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .projects .projects_head p {
+    font-size: 14px; /* P parqrafın ölçüsünü kiçiltmək */
+  }
+
+  .projects .projects_head h1 span {
+    font-size: 24px; /* Span-in font ölçüsünü kiçiltmək */
+  }
+
+  .projects .main_container {
+    grid-template-columns: 1fr; /* 1 kolona keçid */
+    padding: 20px 0; /* Yuxarı və aşağı paddingi kiçiltmək */
+  }
+
+  .projects .main_container .col {
+    margin-bottom: 20px; /* Kartların arasına boşluq əlavə etmək */
+  }
+
+  .projects .projects_head h1 {
+    text-align: center; /* H1 başlığını mərkəzə gətirmək */
   }
 }
 

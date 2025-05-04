@@ -1,78 +1,166 @@
 .title {
   background-color: var(--theme_black);
   padding: 80px 0;
-  h1 {
-    font-size: 64px;
-    font-family: "d-b";
-    color: var(--text_white);
-    line-height: 125%;
-  }
 }
+
+.title h1 {
+  font-size: 64px;
+  font-family: "d-b";
+  color: var(--text_white);
+  line-height: 125%;
+  text-indent: 150px;
+}
+
 .services {
   background-color: var(--theme_white);
-  .services_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    .services_main {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 13px;
-      position: relative;
-      top: 10%;
-    }
-    .services_context {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 13px;
-      position: relative;
-      bottom: 10%;
-    }
-    .offer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 40px;
-      h2 {
-        font-size: 48px;
-        font-family: "d-r";
-        line-height: 125%;
-      }
-    }
-    .section {
-      display: flex;
-      gap: 36px;
-      background-color: var(--text_white);
-      padding: 0 10px;
-      .section_icon {
-        padding: 100px 0 100px 50px;
-      }
-      .icon {
-        width: 55px;
-        height: 60px;
-        color: #fddd0d;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      }
-      .section_data {
-        padding: 56px 0;
-        h3 {
-          font-size: 26px;
-          font-family: "d-r";
-          line-height: 100%;
-          color: var(--theme_black);
-          padding: 30px 0;
-        }
-        p {
-          font-size: 21px;
-          font-family: "d-r";
-          line-height: 150%;
-          color: #8398a2;
-        }
-      }
-    }
+}
+
+.services .services_main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 13px;
+  position: relative;
+  top: 10%;
+}
+
+.services .services_context {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 13px;
+  position: relative;
+  bottom: 10%;
+}
+
+.services .offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.services .offer p {
+  font-size: 48px;
+  font-family: "d-r";
+  line-height: 125%;
+}
+
+.services .section {
+  display: flex;
+  gap: 36px;
+  background-color: var(--text_white);
+  padding: 0 10px;
+}
+
+.services .section .section_icon {
+  padding: 100px 0 100px 50px;
+}
+
+.services .section .icon {
+  width: 55px;
+  height: 60px;
+  color: #fddd0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.services .section .section_data {
+  padding: 56px 0;
+}
+
+.services .section .section_data h2 {
+  font-size: 26px;
+  font-family: "d-r";
+  line-height: 100%;
+  color: var(--theme_black);
+  padding: 30px 0;
+}
+
+.services .section .section_data p {
+  font-size: 21px;
+  font-family: "d-r";
+  line-height: 150%;
+  color: #8398a2;
+}
+
+.frame img {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  /* Başlıq */
+  .title h1 {
+    text-indent: 0 !important; 
+    text-align: center; 
+    font-size: 24px; 
   }
+
+  /* Ümumi xidmətlər bölməsi */
+  .services .services_container {
+    grid-template-columns: 1fr !important; 
+    
+  }
+
+  .services .services_main,
+  .services .services_context {
+    padding: 10px;
+  }
+
+  /* Hər bir xidmətin bölməsi */
+  .services .section {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .services .section_icon {
+    display: none;
+  }
+
+  .services .section_data {
+    padding: 10px 0 !important; /* Mətnin paddingi kiçildilir*/
+  }
+
+  .services .section .section_data h2 {
+    font-size: 18px;
+  }
+
+  .services .section .section_data p {
+    font-size: 16px;
+  }
+
+  .services .offer {
+    padding: 0; /* Təklif bölməsi üçün padding */
+    text-align: center; /* Mərkəzləşdirilir */
+  }
+
+  .services .offer p {
+    font-size: 18px;
+  }
+
+  /* Şəkil */
+  .frame img {
+    width: 100%; /* Şəkil ekran ölçüsünə uyğunlaşdırılır */
+    height: auto; /* Hündürlük proporsional saxlanılır */
+  }
+
+  /* Səhifənin alt hissəsindəki bölmələr */
+  .services .section .section_data h3 {
+    font-size: 20px; /* H3 başlıqlarını kiçildir */
+  }
+
+  .services .section .section_data p {
+    font-size: 16px; /* P mətnini kiçildir */
+  }
+
+  /* İkonların ölçüsü */
+  .services .section .icon {
+    width: 40px; /* İkonları kiçildir */
+    height: 40px;
+  }
+
+  /* Kadrın (frame) altındakı mətn */
+  
 }

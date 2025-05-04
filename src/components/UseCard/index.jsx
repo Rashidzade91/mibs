@@ -11,7 +11,7 @@ export default function UseCard({id, title, heading}) {
       </h1>
       <p>{heading}</p>
       <div className={classes.card_btn}>
-      <button><span>Daha ətraflı</span> <CgArrowBottomRight />{" "}</button>
+      <button><span>Daha ətraflı</span> <CgArrowBottomRight className={classes.icon}/>{" "}</button>
       </div>
     </div>
   );

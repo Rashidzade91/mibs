@@ -2,7 +2,7 @@ import HomeCard from "../HomeCard";
 import { homeData } from "./homeData";
 import classes from "./index.module.css";
 import { CgArrowBottomRight } from "react-icons/cg";
-import { useCard } from "./useCard";
+import { useCard } from "../UseCard/data";
 import UseCard from "../UseCard";
 import kobia from "../../assets/kobia.png";
 import construction from "../../assets/construction.png";
@@ -26,21 +26,25 @@ export default function Home() {
     <>
       <section className={classes.home}>
         <div className={classes.home_title}>
-          <div className="container d-flex">
-            <div>
+          <div className="container">
+           <div className={classes.home_about}>
+           <div>
               <h1>Rəqəmsal dünya üçün innovativ həllər</h1>
             </div>
-            <div>
+            <div className={classes.home_btn}>
               <p>
                 Biz istənilən mövzuda və mürəkkəblikdə layihələr icra edirik!
                 Veb-saytlar yaradır və digər rəqəmsal həllər təklif edirik!
               </p>
               <button>
-                <span>Daha ətraflı</span> <CgArrowBottomRight />{" "}
+                <span>Daha ətraflı</span>{" "}
+                <CgArrowBottomRight className={classes.icon} />{" "}
               </button>
             </div>
+           </div>
           </div>
         </div>
+
         <div className="container">
           <div className="row">
             <div className={classes.home_container}>
@@ -91,7 +95,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className={classes.construction_title}>
-              <div style={{ textIndent: "110px" }}>
+              <div>
                 <h4>İndiyə qədər nə etmişik?</h4>
                 <p>Hər bir layihə üçün individual yanaşıb, layihəyə </p>
                 <p>uyğun texnologiyalardan istifadə edilir.</p>
@@ -150,7 +154,7 @@ export default function Home() {
                   <div className={classes.card_footer}>
                     <p>KOB İnvestisiya Portalı</p>
                     <button>
-                       Ətraflı oxu
+                      Ətraflı oxu
                       <img src={Group} alt="" />
                     </button>
                   </div>
@@ -158,11 +162,16 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="row">
-              <div
-                style={{ textIndent: "110px" }}
-                className={classes.texnology}
-              >
+            
+
+          </div>
+        </div>
+      </section>
+
+      <section className={classes.it_texno}>
+      <div className="container">
+      <div className="row">
+              <div className={classes.texnology}>
                 <h3>Texnologiyalarımız</h3>
                 <p>Müasir texnologiyalardan istifadə etmək işimizin</p>
                 <p>əsas prinsipidir.</p>
@@ -177,8 +186,7 @@ export default function Home() {
                 <img src={FrameB} alt="" />
               </div>
             </div>
-          </div>
-        </div>
+      </div>
       </section>
 
       <section className={classes.it_services}>
@@ -205,7 +213,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className={classes.quality_title}>
-              <div style={{ textIndent: "110px" }}>
+              <div>
                 <h4>Statistikamız keyfiyyətimizin göstəricisidir.</h4>
                 <p>
                   Bir neçə il ərzində gördüyümüz işlərlə bizə müraciət edən{" "}
@@ -216,84 +224,90 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={classes.section}>
-          <div className={classes.card_text}>
-            <div className={classes.quality_card}>
-              <div className={classes.section_icon}>
-                <span>
-                  <FaArrowTrendUp className={classes.icon} />
-                </span>
+        <div className="container">
+          <div className={classes.section}>
+            <div className={classes.card_text}>
+              <div className={classes.quality_card}>
+                <div className={classes.section_icon}>
+                  <span>
+                    <FaArrowTrendUp className={classes.icon} />
+                  </span>
+                </div>
+                <div className={classes.section_data}>
+                  <h3>İcra etdiyimiz layihə sayı</h3>
+                  <p>
+                    Bu illər ərzində 80-dən çox layihə yerinə yetirərək bazarda
+                    dəyərimizə dəyər qatdıq, yüksək keyfiyyətli işlərimizlə daha
+                    çox tanınmağa səbəb olduq.
+                  </p>
+                </div>
               </div>
-              <div className={classes.section_data}>
-                <h3>İcra etdiyimiz layihə sayı</h3>
-                <p>
-                  Bu illər ərzində 80-dən çox layihə yerinə yetirərək bazarda
-                  dəyərimizə dəyər qatdıq, yüksək keyfiyyətli işlərimizlə daha
-                  çox tanınmağa səbəb olduq.
-                </p>
+              <div className={classes.quality_card}>
+                <div className={classes.section_icon}>
+                  <span>
+                    <FaArrowTrendUp className={classes.icon} />
+                  </span>
+                </div>
+                <div className={classes.section_data}>
+                  <h3>İstifadə edilmiş kod sətri</h3>
+                  <p>
+                    Bu günə qədər icra etdiyimiz layihələr üçün ümumilikdə 793-a
+                    yaxın kod sətri istifadə edilib, bu da işimizin kəmiyyət
+                    göstəricisi olaraq yüksək bir rəqəmdir.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className={classes.quality_card}>
-              <div className={classes.section_icon}>
-                <span>
-                  <FaArrowTrendUp className={classes.icon} />
-                </span>
+
+            <div className={classes.card_text}>
+              <div className={classes.quality_card}>
+                <div className={classes.section_icon}>
+                  <span>
+                    <FaArrowTrendUp className={classes.icon} />
+                  </span>
+                </div>
+                <div className={classes.section_data}>
+                  <h3>Məmnun müştəri sayı</h3>
+                  <p>
+                    Brendini bizə əmanət edən 60-dan çox müştərinin bizdən
+                    məmnun şəkildə ayrılması üçün əlimizdən gələnin ən yaxşısını
+                    etməyə diqqət göstərdik.
+                  </p>
+                </div>
               </div>
-              <div className={classes.section_data}>
-                <h3>İstifadə edilmiş kod sətri</h3>
-                <p>
-                  Bu günə qədər icra etdiyimiz layihələr üçün ümumilikdə 793-a
-                  yaxın kod sətri istifadə edilib, bu da işimizin kəmiyyət
-                  göstəricisi olaraq yüksək bir rəqəmdir.
-                </p>
+
+              <div className={classes.quality_card}>
+                <div className={classes.section_icon}>
+                  <span>
+                    <FaArrowTrendUp className={classes.icon} />
+                  </span>
+                </div>
+                <div className={classes.section_data}>
+                  <h3>Bu işlərə gedən zaman</h3>
+                  <p>
+                    Rəqəmsal agentlik olaraq keyfiyyətcə yüksək layihələrimizlə,
+                    onlarla məmnun müştərilərimizlə 5 il ərzində tanınan
+                    şirkətlərdən biri olmağı bacardıq.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-
-          <div className={classes.card_text}>
-
-            <div className={classes.quality_card}>
-              <div className={classes.section_icon}>
-                <span>
-                  <FaArrowTrendUp className={classes.icon} />
-                </span>
-              </div>
-              <div className={classes.section_data}>
-                <h3>Məmnun müştəri sayı</h3>
-                <p>
-                  Brendini bizə əmanət edən 60-dan çox müştərinin bizdən məmnun
-                  şəkildə ayrılması üçün əlimizdən gələnin ən yaxşısını etməyə
-                  diqqət göstərdik.
-                </p>
-              </div>
-            </div>
-
-            <div className={classes.quality_card}>
-              <div className={classes.section_icon}>
-                <span>
-                  <FaArrowTrendUp className={classes.icon} />
-                </span>
-              </div>
-              <div className={classes.section_data}>
-                <h3>Bu işlərə gedən zaman</h3>
-                <p>
-                  Rəqəmsal agentlik olaraq keyfiyyətcə yüksək layihələrimizlə,
-                  onlarla məmnun müştərilərimizlə 5 il ərzində tanınan
-                  şirkətlərdən biri olmağı bacardıq.
-                </p>
-              </div>
-            </div>
-
-          </div>
         </div>
 
-        <div className={classes.img_main}>
-          <img src={img_main} alt="" />
+        <div>
+          <img src={img_main} alt="" className="w-100" />
         </div>
 
+        
+      </section>
+
+      <section className={classes.it_texno}>
         <div className="container">
           <div className="row">
-            <div style={{ textIndent: "110px" }} className={classes.texnology}>
+          <div className="container">
+          <div className="row">
+            <div className={classes.texnology}>
               <h3>Müştərilərimiz</h3>
               <p>Bizə müraciət edən müştərilərimizi bizdən məmnun</p>
               <p>şəkildə ayrılmaları əsas prinspimizdir.</p>
@@ -305,6 +319,8 @@ export default function Home() {
               <img src={kobia1} alt="" />
               <img src={cdek} alt="" />
             </div>
+          </div>
+        </div>
           </div>
         </div>
       </section>

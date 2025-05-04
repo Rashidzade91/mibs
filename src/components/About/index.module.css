@@ -1,180 +1,296 @@
 .about {
   background-color: var(--theme_white);
-  .about_container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    .about_title {
-      h1 {
-        font-size: 3rem;
-        line-height: 125%;
-        font-family: "d-b";
-        color: var(--theme_black);
-      }
-      p {
-        font-size: 1.25rem;
-        font-family: "d-r";
-        line-height: 150%;
-        color: #8398a2;
-      }
-    }
-    .about_data {
-      display: flex;
-      gap: 1rem;
-      p {
-        padding: 0.5rem 0.75rem;
-        background-color: #e4eaed;
-        color: #106594;
-        font-size: 1rem;
-        font-family: "d-r";
-        line-height: 125%;
-      }
-    }
+}
+
+.about .about_container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+.about .about_title h1 {
+  padding-top: 42px;
+  font-size: 3rem;
+  line-height: 125%;
+  font-family: "d-b";
+  color: var(--theme_black);
+}
+
+.about .about_title p {
+  font-size: 1.25rem;
+  font-family: "d-r";
+  line-height: 150%;
+  color: #8398a2;
+}
+
+.about .about_data {
+  display: flex;
+  gap: 1rem;
+}
+
+.about .about_data p {
+  padding: 0.5rem 0.75rem;
+  background-color: #e4eaed;
+  color: #106594;
+  font-size: 1rem;
+  font-family: "d-r";
+  line-height: 125%;
+}
+
+/* Platform Section */
+.platform {
+  display: flex;
+  gap: 38px; 
+  padding: 84px 0 116px;
+}
+
+.platform .about_project {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.platform .about_project h2 {
+  font-size: 2rem;
+  font-family: "d-r";
+  line-height: 150%;
+  color: var(--theme_black);
+}
+
+.platform .about_project p,
+.platform .about_project small {
+  font-size: 24px;
+  font-family: "d-r";
+  line-height: 125%;
+  color: var(--theme_black);
+}
+
+.platform .about_project span {
+  background-color: #e4eaed;
+  color: #6098b8;
+  font-size: 18px;
+  line-height: 100%;
+  font-family: "d-r";
+  border: 1px solid #6098b8;
+  border-radius: 22px;
+  padding: 16px 10px;
+}
+
+/* Purpose Section */
+.platform .purpose {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.platform .purpose h2 {
+  font-size: 32px;
+  font-family: "d-r";
+  line-height: 150%;
+  color: var(--theme_black);
+}
+
+.platform .purpose p {
+  font-size: 24px;
+  line-height: 150%;
+  font-family: "d-r";
+  color: #37515d;
+}
+
+.platform .purpose span {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "d-r";
+  color: #8398a2;
+}
+
+/* Feedback Section */
+.platform .feedback {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 45px;
+  gap: 20px;
+  background-color: var(--theme_black);
+  margin-top: 34px;
+}
+
+.platform .feedback h2 {
+  font-size: 28px;
+  font-family: "d-r";
+  line-height: 150%;
+  color: var(--text_white);
+}
+
+.platform .feedback p {
+  font-size: 20px;
+  line-height: 160%;
+  font-family: "d-r";
+  color: #c3d0d6;
+}
+
+.platform .feedback strong {
+  font-size: 22px;
+  line-height: 150%;
+  color: #fddd0d;
+}
+
+.platform .feedback p.center {
+  font-size: 18px;
+  line-height: 160%;
+  font-family: "d-r";
+}
+
+/* Decoration */
+.platform .feedback .decoration1 {
+  position: relative;
+}
+
+.platform .feedback .decoration1 .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(500px, -15px);
+  opacity: 40%;
+}
+
+.platform .feedback .decoration {
+  position: relative;
+}
+
+.platform .feedback .decoration .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-36px, -43px) rotate(180deg);
+  width: 160px;
+  height: 115px;
+  opacity: 40%;
+}
+
+/* Other Project Section */
+.other_project {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.other_project p {
+  font-size: 32px;
+  line-height: 125%;
+  font-family: "d-r";
+  color: var(--theme_black);
+}
+
+.other_project button {
+  background-color: #fddd0d;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 45px;
+  gap: 16px;
+}
+
+.other_project button span {
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  font-family: "d-r";
+  color: #1d2028;
+}
+.icon {
+  font-size: 25px;
+}
+
+/* Card Section */
+.card_data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px 0 60px;
+  gap: 21px;
+}
+
+
+/* Mobile Responsivlik - 576px */
+@media (max-width: 576px) {
+  .about .about_data {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .platform {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 38px;
-    padding: 84px 0 116px;
-    .about_project {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      h2 {
-        font-size: 2rem;
-        font-family: "d-r";
-        line-height: 150%;
-        color: var(--theme_black);
-      }
-      p,
-      small {
-        font-size: 24px;
-        font-family: "d-r";
-        line-height: 125%;
-        color: var(--theme_black);
-      }
-      span {
-        background-color: #e4eaed;
-        color: #6098b8;
-        font-size: 18px;
-        line-height: 100%;
-        font-family: "d-r";
-        border: 1px solid #6098b8;
-        border-radius: 22px;
-        padding: 16px 10px;
-      }
-    }
-    .purpose {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      h2 {
-        font-size: 32px;
-        font-family: "d-r";
-        line-height: 150%;
-        color: var(--theme_black);
-      }
-      p {
-        font-size: 24px;
-        line-height: 150%;
-        font-family: "d-r";
-        color: #37515d;
-      }
-      span {
-        font-size: 16px;
-        line-height: 150%;
-        font-family: "d-r";
-        color: #8398a2;
-      }
-    }
-    .feedback {
-      display: flex;
-      flex-direction: column;
-      border-radius: 16px;
-      padding: 45px;
-      gap: 20px;
-      background-color: var(--theme_black);
-      margin-top: 34px;
-      h2 {
-        font-size: 28px;
-        font-family: "d-r";
-        line-height: 150%;
-        color: var(--text_white);
-      }
-      p {
-        font-size: 20px;
-        line-height: 160%;
-        font-family: "d-r";
-        color: #c3d0d6;
-      }
-      strong {
-        font-size: 22px;
-        line-height: 150%;
-        color: #fddd0d;
-      }
-      p.center {
-        font-size: 18px;
-        line-height: 160%;
-        font-family: "d-r";
-      }
-      .decoration1 {
-        position: relative;
-        .left {
-          position: absolute;
-          top: 0;
-          left: 0;
-          transform: translate(380px, -15px);
-          opacity: 40%;
-        }
-      }
-      .decoration {
-        position: relative;
-        .left {
-          position: absolute;
-          top: 0;
-          left: 0;
-          transform: translate(-36px, -43px) rotate(180deg);
-          width: 160px;
-          height: 115px;
-          opacity: 40%;
-        }
-      }
-    }
+    display: flex;
+    flex-direction: column;
   }
 
   .other_project {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    p {
-      font-size: 32px;
-      line-height: 125%;
-      font-family: "d-r";
-      color: var(--theme_black);
-    }
-    button {
-      background-color: #fddd0d;
-      padding: 16px 36px;
-      width: 220px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 45px;
-      gap: 16px;
-      span {
-        font-size: 22px;
-        line-height: 100%;
-        letter-spacing: 2%;
-        font-family: "d-r";
-        color: #1d2028;
-      }
-    }
+    flex-direction: column;
+  }
+
+  .other_project p {
+    font-size: 24px;
+  }
+
+  .other_project button {
+    width: 230px;
+    height: 50px;
+  }
+
+  .about .about_title h1 {
+    font-size: 24px;
+  }
+
+  .about .about_title p {
+    font-size: 1rem;
+  }
+
+  .platform .about_project h2 {
+    font-size: 24px;
+  }
+
+  .platform .about_project p,
+  .platform .about_project small {
+    font-size: 16px;
+  }
+
+  .platform .purpose h2 {
+    font-size: 24px;
+  }
+
+  .platform .purpose span {
+    font-size: 16px;
+  }
+
+  .platform .purpose p {
+    font-size: 18px;
+  }
+
+  .platform .feedback h2 {
+    font-size: 24px;
+  }
+
+  .platform .feedback p {
+    font-size: 16px;
+  }
+
+  .platform .feedback .decoration1 .left {
+    transform: translate(320px, -10px)
   }
 
   .card_data {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 40px 0 60px;
-    gap: 21px;
+    grid-template-columns: 1fr;
   }
+
+  .img_div img {
+    width: 100%;
+  }
+
+  .platform .about_project p,
+.platform .about_project small {
+  font-size: 18px;
 }
+}
+

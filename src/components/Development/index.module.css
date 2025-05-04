@@ -1,83 +1,321 @@
-.title{
+.title {
   background-color: var(--theme_black);
   padding: 80px 0;
-  h1{
-      font-size: 64px;
-      font-family: 'd-b';
-      color: var(--text_white);
-      line-height: 100%;
-    }
 }
+
+.title h1 {
+  font-size: 64px;
+  font-family: "d-b";
+  color: var(--text_white);
+  line-height: 100%;
+  text-indent: 150px;
+}
+
+/* Mağaza Bölməsi */
 .store {
   background-color: var(--theme_white);
   padding-top: 60px;
-  .store_container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    h3 {
-      font-size: 32px;
-      font-family: "d-r";
-      line-height: 125%;
-      color: #37515d;
-    }
-    p {
-      font-size: 20px;
-      font-family: "d-r";
-      line-height: 150%;
-      color: #8398a2;
-    }
+}
+
+/* Mağaza Kontaineri */
+.store .store_container h3 {
+  font-size: 32px;
+  font-family: "d-r";
+  line-height: 125%;
+  color: #37515d;
+  padding: 55px 0 22px;
+}
+
+.store .store_container p {
+  font-size: 20px;
+  font-family: "d-r";
+  line-height: 150%;
+  color: #8398a2;
+}
+
+/* Video Kontaineri */
+.store .video_container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 35.25%; /* 16:9 nisbəti üçün */
+  margin-top: 100px;
+  height: 0;
+  overflow: hidden;
+}
+
+.store .video_container iframe {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px !important;
+}
+
+/* İstifadəçi Kontaineri */
+.store .user_container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap; /* Dəyişən ekran ölçüləri üçün */
+}
+
+.store .user_container p {
+  font-size: 20px;
+  font-family: "d-r";
+  line-height: 150%;
+  color: #8398a2;
+}
+
+/* Təkliflər */
+.card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding-bottom: 170px;
+}
+
+.store .offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.store .offers p {
+  font-size: 20px;
+  font-family: "d-r";
+  color: #8398a2;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.store .offers .icon {
+  flex-shrink: 0;
+}
+
+/* H1 Stil */
+.store h2 {
+  font-size: 32px;
+  line-height: 150%;
+  font-family: "d-r";
+  color: #37515d;
+  padding: 100px 0;
+}
+
+@media (max-width: 1200px) {
+  .title h1 {
+    font-size: 50px;
+    text-align: center;
+    text-indent: 0 !important;
   }
-  .video_container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 35.25%; /* 16:9 nisbəti üçün */
-    margin-top: 100px;
-    height: 0;
-    overflow: hidden;
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 300px !important;
-    }
+
+  .store .store_container h3 {
+    font-size: 30px;
   }
-  .user_container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    p {
-      font-size: 20px;
-      font-family: "d-r";
-      line-height: 150%;
-      color: #8398a2;
-    }
+
+  .store .store_container p {
+    font-size: 18px;
   }
-  .offers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-    p {
-      font-size: 20px;
-      font-family: "d-r";
-      color: #8398a2;
-      line-height: 150%;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .icon {
-      flex-shrink: 0;
-    }
+
+  .store .user_container {
+    flex-direction: column;
   }
-  .same_clas {
-    padding: 72px 0 180px;
+
+  .card_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
-  h1 {
-    font-size: 32px;
-    line-height: 150%;
-    font-family: "d-r";
-    color: #37515d;
-    padding: 100px 0;
+
+  .store .offers {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .store .offers img {
+    height: -webkit-fill-available;
+  }
+
+  .store .same_clas {
+    padding: 50px 0;
+  }
+
+  .store h2 {
+    font-size: 30px;
+  }
+
+ 
+  .store .video_container iframe {
+    max-height: max-content;
   }
 }
+
+@media (max-width: 991px) {
+  .title h1 {
+    font-size: 40px;
+    text-align: center;
+    text-indent: 0 !important;
+  }
+
+  .store .store_container h3 {
+    font-size: 28px;
+  }
+
+  .store .store_container p {
+    font-size: 18px;
+  }
+
+  .store .user_container {
+    flex-direction: column;
+  }
+
+  .store .offers {
+    flex-direction: column;
+  }
+
+  .card_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card_container .offers {
+    display: flex;
+  }
+
+  .store .same_clas {
+    padding: 50px 0;
+  }
+
+  .store h2 {
+    font-size: 28px;
+  }
+
+  .card_container .same {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+
+  /* Video Kontaineri üçün ekran ölçüsünə uyğun dəyişiklik */
+  .store .video_container iframe {
+    max-height: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 28px;
+    text-align: center;
+    text-indent: 0 !important;
+  }
+
+  .store .store_container h3 {
+    font-size: 26px;
+  }
+
+  .store .store_container p {
+    font-size: 16px;
+  }
+
+  .card_container {
+    padding-bottom: 32px;
+  }
+
+  .card_container .offers {
+    display: flex;
+  }
+
+  .card_container .same {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+
+  .card_container .same .list {
+    padding-top: 32px;
+  }
+
+  .store .offers p {
+    font-size: 16px;
+  }
+
+  .store .offers img {
+    padding: 10px 0;
+  }
+
+  .store h2 {
+    font-size: 28px;
+    padding: 32px 0 36px;
+  }
+
+  .store .video_container iframe {
+    max-height: max-content;
+  }
+
+  .store .video_container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .title h1 {
+    font-size: 24px;
+    text-align: center;
+    text-indent: 0 !important;
+  }
+
+  .store .store_container h3 {
+    font-size: 24px;
+  }
+
+  .store .store_container p {
+    font-size: 16px;
+  }
+
+  .card_container {
+    padding-bottom: 32px;
+  }
+
+  .card_container .offers {
+    display: flex;
+  }
+
+  .card_container .same {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+
+  .card_container .same .list {
+    padding-top: 32px;
+  }
+
+  .store .offers p {
+    font-size: 16px;
+  }
+
+  .store .offers img {
+    padding: 10px 0;
+  }
+
+  .store h2 {
+    font-size: 24px;
+    padding: 32px 0 36px;
+  }
+
+  /* Video kontaineri daha kiçik ekranlar üçün */
+  .store .video_container iframe {
+    max-height: max-content;
+  }
+
+  .store .video_container {
+    margin: 0;
+  }
+
+  .store .user_container p {
+    font-size: 16px;
+  }
+}
+
+
+
+
 

@@ -4,7 +4,7 @@ import Rectangle2 from "../../assets/Rectangle2.png";
 
 const HomeCard = ({title, description }) => {
   return (
-    <div className="container">
+    <div className={classes.box_container}>
       <div className={classes.card}>
         <div className={classes.img_div}>
           <img className={classes.img_front} src={Rectangle1} alt="" />

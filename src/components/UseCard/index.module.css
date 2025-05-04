@@ -1,53 +1,87 @@
-.card_black{
+.card_black {
   background-color: #1D2028;
-  padding: 0 50px;
+  padding: 0 30px;
   display: grid;
   justify-content: center;
   align-items: center;
-  h1{
-      font-size: 30px;
-      line-height: 100%;
-      font-family: 'd-r';
-      color: var(--text_white);
-      padding: 60px 0 34px;
-
-    span{
-      font-size: 30px;
-      line-height: 100%;
-      font-family: 'd-r';
-      color: #FDDD0D;
-    }
-  }
-  p{
-    font-size: 24px;
-    line-height: 130%;
-    font-family: 'd-r';
-    color: #9CACB4;
-    padding-bottom: 76px;
-  }
- 
-  .card_btn{
-    padding-bottom: 60px;
-    button {
-      background-color: #fddd0d;
-      padding: 20px 0;
-      width: 240px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 45px;
-      gap: 16px;
-      border: none;
-      span {
-        font-size: 22px;
-        line-height: 100%;
-        letter-spacing: 2%;
-        font-family: "d-r";
-        color: #1d2028;
-      }
-    }
-  }
 }
+
+.icon {
+  font-size: 24px;
+}
+
+.card_black h1 {
+  font-size: 30px;
+  line-height: 1;
+  font-family: 'd-r';
+  color: var(--text_white);
+  padding: 60px 0 34px;
+}
+
+.card_black h1 span {
+  font-size: 30px;
+  line-height: 1;
+  font-family: 'd-r';
+  color: #FDDD0D;
+}
+
+.card_black p {
+  font-size: 24px;
+  line-height: 130%;
+  font-family: 'd-r';
+  color: #9CACB4;
+  padding-bottom: 76px;
+}
+
+.card_black .card_btn {
+  padding-bottom: 60px;
+}
+
+.card_black .card_btn button {
+  background-color: #FDDD0D;
+  padding: 20px 0;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  gap: 16px;
+  border: none;
+}
+
+.card_black .card_btn button span {
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 2%;
+  font-family: 'd-r';
+  color: #1D2028;
+}
+
+@media (max-width: 576px) {
+  .card_black {
+    padding: 0 16px;
+  }
+
+  .card_black .card_btn button {
+    padding: 14px 18px;
+    width: auto;
+  }
+
+  .card_black .card_btn button span {
+    font-size: 14px;
+  }
+
+  .card_black h1,
+  .card_black h1 span {
+    font-size: 18px;
+  }
+  
+  .card_black p {
+    font-size: 16px;
+  }
+
+}
+
 
 
 

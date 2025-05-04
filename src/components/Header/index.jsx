@@ -6,10 +6,11 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const { pathname } = useLocation();
-  const whiteRoutes = ["/who", "/services", "/development", "/home", "/", ""];
-  const isWhite = whiteRoutes.includes(pathname);
-
+  const blackHeaderRouters = ["/who", "/services", "/development", "/home", "/", ""];
+  const isBlack = blackHeaderRouters.includes(pathname);
+  
   const [show, setShow] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
   const menuRef = useRef(null);
   const toggleDropdown = () => {
     setShow(!show);
@@ -28,13 +29,25 @@ export default function Header() {
     };
   }, []);
 
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    window.addEventListener('resize', handleResize);
+    
+ 
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const isMobile = width <= 576;
+  
   return (
-    <header className={isWhite ? classes.black_header : classes.white_header}>
+    <header className={isBlack ? classes.black_header : classes.white_header}>
       <div className="container">
         <div className="row">
           <div className={classes.header_container}>
             <a href="#" className={classes.logo}>
-              <img src={isWhite ? logo_white : logo_black} alt="" />
+              <img src={isBlack || isMobile ? logo_white : logo_black} alt="" />
             </a>
             <nav className={classes.navbar}>
               <NavLink
@@ -51,16 +64,14 @@ export default function Header() {
               </NavLink>
               <NavLink
                 className={({ isActive }) => (isActive ? "active" : null)}
-                to="/portfolio"
+                to="/contact"
               >
                 Portfolio
               </NavLink>
               <button onClick={toggleDropdown}>
-                <div>
-                  <span className={classes.item1}></span>
-                  <span className={classes.item2}></span>
-                  <span className={classes.item3}></span>
-                </div>
+                <span className={classes.item1}></span>
+                <span className={classes.item2}></span>
+                <span className={classes.item3}></span>
               </button>
             </nav>
             {show ? (
