@@ -231,7 +231,7 @@
 }
 
 .construction .card_construction .info_card {
-  background-color: #9E9E9E33;
+  background-color: #9e9e9e33;
   padding: 46px 30px;
 }
 
@@ -244,13 +244,13 @@
 
 .construction .card_construction .info_card button {
   width: 126px;
-  color: #716E6E;
+  color: #716e6e;
   font-size: 18px;
   line-height: 100%;
   font-family: "d-r";
   color: #716e6e;
   border: none;
-  background-color: #9E9E9E33;
+  background-color: #9e9e9e33;
 }
 
 .construction .card_construction .info_card .card_footer {
@@ -297,11 +297,6 @@
 .it_texno {
   background-color: var(--theme_white);
   padding-bottom: 48px;
-}
-
-.icon_texno {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* IT SERVICES Section */
@@ -385,7 +380,7 @@
 }
 
 .quality .section .quality_card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,14 +401,14 @@
 .quality .section .section_data h3 {
   font-size: 26px;
   line-height: 100%;
-  font-family: 'd-r';
-  color: #0F121B;
+  font-family: "d-r";
+  color: #0f121b;
 }
 .quality .section .section_data p {
   font-size: 21px;
   line-height: 150%;
-  font-family: 'd-r';
-  color: #8398A2;
+  font-family: "d-r";
+  color: #8398a2;
   padding-top: 28px;
 }
 
@@ -423,10 +418,639 @@
   padding-bottom: 84px;
 }
 
+@media (max-width: 1200px) {
+  /* HOME Section */
+  .home .home_title .home_about {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .home .home_title .home_about h1 {
+    font-size: 60px; /* Yəni daha kiçik başlıq */
+  }
+
+  .home .home_title .home_btn button {
+    width: 340px; /* Düymə eni kiçildilib */
+    height: 60px; /* Düymə boyu */
+  }
+
+  .home .home_title .home_btn button span {
+    font-size: 20px;
+  }
+
+  .home .home_title .home_btn button .icon {
+    font-size: 21px;
+  }
+
+  .home .home_title .home_btn {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  /* HOME Container - Daha uyğun grid strukturu */
+  .home .home_container {
+    grid-template-columns: 1fr 1fr; /* Bütün sütunları bir-birinə yığırıq */
+    padding: 54px 16px;
+  }
+
+  .home .home_container .home_main {
+    align-items: normal;
+  }
+
+  /* CARD SELECTED Section */
+  .card_selected .useCard_title {
+    flex-direction: column; /* Yığılmış başlıq */
+    padding-top: 30px;
+  }
+
+  .card_selected .useCard_title p {
+    font-size: 28px;
+  }
+
+  .card_selected .useCard_title span {
+    font-size: 46px;
+  }
+
+  .card_selected .useCard_title .theme {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  .card_selected .useCard {
+    grid-template-columns: 1fr 1fr; /* Kartları tək sütun halına gətiririk */
+    padding: 32px 16px;
+  }
+
+  .construction .construction_title div {
+    text-indent: 0;
+  }
+
+  .construction .construction_title p {
+    font-size: 22px; /* Kiçik mətn ölçüsü */
+    margin-bottom: 0;
+  }
+
+  .construction .gradient button {
+    padding: 16px 24px;
+    width: auto;
+    font-size: 20px;
+  }
+
+  .construction .gradient {
+    padding: 15px; /* Gradientin içərisini daraldırıq */
+  }
+
+  .construction .card_construction {
+    grid-template-columns: 1fr; /* Kartları yığırıq */
+  }
+
+  .construction .card_construction .info_card {
+    padding: 30px 20px;
+  }
+
+  /* IT SERVICES Section */
+  .it_texno {
+    background-color: var(--text_white);
+    padding-bottom: 48px;
+  }
+  .it_services .it_title {
+    padding: 30px 0 48px;
+  }
+
+  .it_services .it_title h4 {
+    font-size: 28px;
+  }
+
+  .it_services .it_title p {
+    font-size: 44px;
+  }
+
+  .it_services .it_list {
+    gap: 8px;
+    padding-bottom: 48px;
+  }
+
+  .it_services .it_list p {
+    font-size: 36px;
+  }
+
+  /* QUALITY Section */
+  .quality .quality_title {
+    padding: 48px 16px 32px;
+  }
+
+  .quality .quality_title div {
+    text-indent: 0;
+  }
+
+  .quality .quality_title h4 {
+    font-size: 30px;
+    font-family: "d-b";
+  }
+
+  .quality .quality_title p {
+    font-size: 22px; /* Kiçik mətn ölçüsü */
+    margin-bottom: 0;
+  }
+
+  .quality .section {
+    gap: 10px;
+    top: 16px;
+  }
+
+  .quality .section .quality_card {
+    flex-direction: column;
+    padding: 25px; /* Kiçik padding */
+    gap: 8px;
+  }
+
+  .quality .section .section_data h3 {
+    font-size: 24px;
+    font-family: "d-b";
+  }
+
+  .quality .section .section_data p {
+    font-size: 24px;
+  }
+
+  .quality .icon_texno {
+    background-color: var(--text_white);
+  }
+
+  /* Texnologiya bölməsi */
+  .texnology {
+    padding: 50px 10px; /* padding kiçildirik */
+    text-indent: 0; /* Text-indent silirik */
+    background-color: var(--text_white);
+  }
+
+  .texnology h3 {
+    font-size: 28px;
+  }
+
+  .texnology p {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  /* HOME Section */
+  .home .home_title {
+    padding: 370px 0 16px; /* padding azaldılıb */
+  }
+
+  .home .home_title .home_about {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .home .home_title .home_about h1 {
+    font-size: 52px; /* Yəni daha kiçik başlıq */
+  }
+
+  .home .home_title .home_about p {
+    font-size: 16px; /* Kiçik mətn */
+    padding-bottom: 30px; /* Bottom padding */
+  }
+
+  .home .home_title .home_btn button {
+    width: 340px; /* Düymə eni kiçildilib */
+    height: 60px; /* Düymə boyu */
+  }
+
+  .home .home_title .home_btn button span {
+    font-size: 18px;
+  }
+
+  .home .home_title .home_btn button .icon {
+    font-size: 20px;
+  }
+
+  .home .home_title .home_btn {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  /* HOME Container - Daha uyğun grid strukturu */
+  .home .home_container {
+    grid-template-columns: 1fr; /* Bütün sütunları bir-birinə yığırıq */
+    padding: 54px 16px;
+  }
+
+  .home .home_container .home_main {
+    align-items: normal;
+  }
+
+  .home .home_container .home_main p {
+    font-size: 21px; /* Kiçik mətn ölçüsü */
+  }
+
+  .home .home_container .home_main h1 {
+    font-size: 24px; /* Kiçik başlıq */
+  }
+
+  .construction .more_btn {
+    font-size: 18px;
+    font-family: "d-r";
+    line-height: 100%;
+    color: #1d202880;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .construction .more_btn p {
+    text-decoration: underline;
+  }
+
+  /* CARD SELECTED Section */
+  .card_selected .useCard_title {
+    flex-direction: column; /* Yığılmış başlıq */
+    padding-top: 30px;
+  }
+
+  .card_selected .useCard_title p {
+    font-size: 24px;
+  }
+
+  .card_selected .useCard_title span {
+    font-size: 30px;
+  }
+
+  .card_selected .useCard_title .theme {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .card_selected .useCard {
+    grid-template-columns: 1fr; /* Kartları tək sütun halına gətiririk */
+    padding: 32px 16px;
+  }
+
+  .construction .construction_title div {
+    text-indent: 0;
+  }
+
+  .construction .construction_title h4 {
+    font-size: 28px;
+  }
+
+  .construction .construction_title p {
+    font-size: 20px; /* Kiçik mətn ölçüsü */
+    margin-bottom: 0;
+  }
+
+  .construction .gradient button {
+    padding: 16px 24px;
+    width: auto;
+    font-size: 16px;
+  }
+
+  .construction .gradient {
+    padding: 15px; /* Gradientin içərisini daraldırıq */
+  }
+
+  .construction .card_construction {
+    grid-template-columns: 1fr; /* Kartları yığırıq */
+  }
+
+  .construction .card_construction .info_card {
+    padding: 30px 20px;
+  }
+
+  /* IT SERVICES Section */
+  .it_texno {
+    background-color: var(--text_white);
+    padding-bottom: 48px;
+  }
+  .it_services .it_title {
+    padding: 30px 0 48px;
+  }
+
+  .it_services .it_title h4 {
+    font-size: 26px;
+  }
+
+  .it_services .it_title p {
+    font-size: 40px;
+  }
+
+  .it_services .it_list {
+    gap: 8px;
+    padding-bottom: 48px;
+  }
+
+  .it_services .it_list p {
+    font-size: 34px;
+  }
+
+  /* QUALITY Section */
+  .quality .quality_title {
+    padding: 48px 16px 32px;
+  }
+
+  .quality .quality_title div {
+    text-indent: 0;
+  }
+
+  .quality .quality_title h4 {
+    font-size: 28px;
+    font-family: "d-b";
+  }
+
+  .quality .quality_title p {
+    font-size: 20px; /* Kiçik mətn ölçüsü */
+    margin-bottom: 0;
+  }
+
+  .quality .section {
+    flex-direction: column; /* Vertikal yerləşmə */
+    gap: 10px;
+    top: 16px;
+  }
+
+  .quality .section .quality_card {
+    flex-direction: column; /* Kartın içindəki elementləri yığırıq */
+    padding: 25px; /* Kiçik padding */
+    gap: 8px;
+  }
+
+  .quality .section .section_data h3 {
+    font-size: 22px;
+    font-family: "d-b";
+  }
+
+  .quality .section .section_data p {
+    font-size: 20px;
+  }
+
+  .quality .icon_texno {
+    background-color: var(--text_white);
+  }
+
+  /* Texnologiya bölməsi */
+  .texnology {
+    padding: 50px 10px; /* padding kiçildirik */
+    text-indent: 0; /* Text-indent silirik */
+    background-color: var(--text_white);
+  }
+
+  .texnology h3 {
+    font-size: 26px;
+  }
+
+  .texnology p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .quality .section .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* HOME Section */
+  .home .home_title {
+    padding: 370px 0 16px; /* padding azaldılıb */
+  }
+
+  .home .home_title .home_about {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .home .home_title .home_about h1 {
+    font-size: 40px; /* Yəni daha kiçik başlıq */
+  }
+
+  .home .home_title .home_about p {
+    font-size: 16px; /* Kiçik mətn */
+    padding-bottom: 30px; /* Bottom padding */
+  }
+
+  .home .home_title .home_btn button {
+    width: 340px; /* Düymə eni kiçildilib */
+    height: 50px; /* Düymə boyu */
+  }
+
+  .home .home_title .home_btn button span {
+    font-size: 16px;
+  }
+
+  .home .home_title .home_btn button .icon {
+    font-size: 20px;
+  }
+
+  .home .home_title .home_btn {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  /* HOME Container - Daha uyğun grid strukturu */
+  .home .home_container {
+    grid-template-columns: 1fr; /* Bütün sütunları bir-birinə yığırıq */
+    padding: 54px 16px;
+  }
+
+  .home .home_container .home_main {
+    align-items: normal;
+  }
+
+  .home .home_container .home_main p {
+    font-size: 20px; /* Kiçik mətn ölçüsü */
+  }
+
+  .home .home_container .home_main h1 {
+    font-size: 24px; /* Kiçik başlıq */
+  }
+
+  .construction .more_btn {
+    font-size: 16px;
+    font-family: "d-r";
+    line-height: 100%;
+    color: #1d202880;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .construction .more_btn p {
+    text-decoration: underline;
+  }
+
+  /* CARD SELECTED Section */
+  .card_selected .useCard_title {
+    flex-direction: column; /* Yığılmış başlıq */
+    padding-top: 30px;
+  }
+
+  .card_selected .useCard_title p {
+    font-size: 20px;
+  }
+
+  .card_selected .useCard_title span {
+    font-size: 26px;
+  }
+
+  .card_selected .useCard_title .theme {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .card_selected .useCard {
+    grid-template-columns: 1fr; /* Kartları tək sütun halına gətiririk */
+    padding: 32px 16px;
+  }
+
+  .construction .construction_title div {
+    text-indent: 0;
+  }
+
+  .construction .construction_title h4 {
+    font-size: 26px;
+  }
+
+  .construction .construction_title p {
+    font-size: 18px; /* Kiçik mətn ölçüsü */
+    margin-bottom: 0;
+  }
+
+  .construction .gradient button {
+    padding: 16px 24px;
+    width: auto;
+    font-size: 16px;
+  }
+
+  .construction .gradient {
+    padding: 15px; /* Gradientin içərisini daraldırıq */
+  }
+
+  .construction .gradient p {
+    font-size: 18px;
+    color: #aeb4b8;
+  }
+
+  .construction .gradient span {
+    font-size: 18px;
+  }
+
+  .construction .card_construction {
+    grid-template-columns: 1fr; /* Kartları yığırıq */
+  }
+
+  .construction .card_construction .info_card .card_footer p {
+    font-size: 18px;
+  }
+
+  .construction .card_construction .info_card {
+    padding: 30px 20px;
+  }
+
+  .construction .card_construction .info_card p {
+    font-size: 18px;
+  }
+
+  .construction .card_construction .info_card button {
+    font-size: 16px; /* Kiçik yazı */
+  }
+
+  /* IT SERVICES Section */
+  .it_texno {
+    background-color: var(--text_white);
+    padding-bottom: 48px;
+  }
+  .it_services .it_title {
+    padding: 30px 0 48px;
+  }
+
+  .it_services .it_title h4 {
+    font-size: 32px;
+  }
+
+  .it_services .it_title p {
+    font-size: 30px;
+  }
+
+  .it_services .it_list {
+    gap: 8px;
+    padding-bottom: 48px;
+  }
+
+  .it_services .it_list p {
+    font-size: 18px;
+  }
+
+  /* QUALITY Section */
+  .quality .quality_title {
+    padding: 48px 16px 32px;
+  }
+
+  .quality .quality_title div {
+    text-indent: 0;
+  }
+
+  .quality .quality_title h4 {
+    font-size: 26px;
+    font-family: "d-b";
+  }
+
+  .quality .quality_title p {
+    font-size: 18px; /* Kiçik mətn ölçüsü */
+    margin-bottom: 0;
+  }
+
+  .quality .section {
+    flex-direction: column; /* Vertikal yerləşmə */
+    gap: 10px;
+    top: 16px;
+  }
+
+  .quality .section .quality_card {
+    flex-direction: column; /* Kartın içindəki elementləri yığırıq */
+    padding: 25px; /* Kiçik padding */
+    gap: 8px;
+  }
+
+  .quality .section .section_data h3 {
+    font-size: 18px;
+    font-family: "d-b";
+  }
+
+  .quality .section .section_data p {
+    font-size: 18px;
+  }
+
+  .quality .icon_texno {
+    background-color: var(--text_white);
+  }
+
+  /* Texnologiya bölməsi */
+  .texnology {
+    padding: 50px 10px; /* padding kiçildirik */
+    text-indent: 0; /* Text-indent silirik */
+    background-color: var(--text_white);
+  }
+
+  .texnology h3 {
+    font-size: 24px;
+  }
+
+  .texnology p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .quality .section .icon {
+    display: none;
+  }
+}
 
 /* Mobil üçün uyğunlaşdırmalar (max-width: 576px) */
 @media (max-width: 576px) {
-
   /* HOME Section */
   .home .home_title {
     padding: 412px 0 16px; /* padding azaldılıb */
@@ -436,7 +1060,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-  }  
+  }
 
   .home .home_title .home_about h1 {
     font-size: 30px; /* Yəni daha kiçik başlıq */
@@ -472,7 +1096,7 @@
   }
 
   .home .home_container .home_main {
-    align-items: normal; 
+    align-items: normal;
   }
 
   .home .home_container .home_main p {
@@ -483,7 +1107,19 @@
     font-size: 24px; /* Kiçik başlıq */
   }
 
+  .construction .more_btn {
+    font-size: 16px;
+    font-family: "d-r";
+    line-height: 100%;
+    color: #1d202880;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
 
+  .construction .more_btn p {
+    text-decoration: underline;
+  }
 
   /* CARD SELECTED Section */
   .card_selected .useCard_title {
@@ -503,7 +1139,7 @@
     font-size: 16px;
     padding-top: 20px;
   }
-  
+
   .card_selected .useCard {
     grid-template-columns: 1fr; /* Kartları tək sütun halına gətiririk */
     padding: 32px 16px;
@@ -536,10 +1172,9 @@
     font-size: 22px;
   }
 
-  
   .construction .gradient p {
     font-size: 16px;
-    color: #AEB4B8;
+    color: #aeb4b8;
   }
 
   .construction .gradient span {
@@ -597,14 +1232,13 @@
     padding: 48px 16px 32px;
   }
 
-  .quality .quality_title div{
+  .quality .quality_title div {
     text-indent: 0;
   }
-  
 
   .quality .quality_title h4 {
     font-size: 24px;
-    font-family: 'd-b';
+    font-family: "d-b";
   }
 
   .quality .quality_title p {
@@ -626,7 +1260,7 @@
 
   .quality .section .section_data h3 {
     font-size: 16px;
-    font-family: 'd-b';
+    font-family: "d-b";
   }
 
   .quality .section .section_data p {
@@ -653,12 +1287,7 @@
     margin-bottom: 0;
   }
 
-  /* Düymə Hover Effektləri */
-  .home .home_title button:hover,
-  .construction .gradient button:hover {
-    background-color: #1d2028;
-    color: #fddd0d;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  .quality .section .icon {
+    display: none;
   }
 }
-

@@ -109,9 +109,29 @@
   border-bottom: 1px solid #00000014;
 }
 
-@media screen and (max-width: 576px){
+.white_header .navbar button {
+  background-color: var(--theme_white);
+}
+
+.white_header .navbar button .item1,
+.white_header .navbar button .item2,
+.white_header .navbar button .item3 {
+  background-color: var(--theme_black);
+}
+
+@media (max-width: 576px) {
   .white_header {
     background-color: var(--theme_black);
+  }
+
+  .white_header .navbar button {
+    background-color: var(--theme_black);
+  }
+
+  .white_header .navbar button .item1,
+  .white_header .navbar button .item2,
+  .white_header .navbar button .item3 {
+    background-color: var(--theme_white);
   }
 }
 
@@ -120,13 +140,13 @@
 }
 
 .white_header button {
-  background-color: var(--theme_white);
+  background-color: var(--theme_black);
 }
 
 .white_header button .item1,
 .white_header button .item2,
 .white_header button .item3 {
-  background-color: var(--text_black);
+  background-color: var(--text_white);
 }
 
 .white_header .logo {
@@ -134,67 +154,36 @@
   height: 50px;
 }
 
+@media (max-width: 1200px) {
+  .navbar a {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar a {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   /* Navbar - Flex Column */
-  .navbar {
-    gap: 20px;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-  }
-
   .navbar a {
-    font-size: 16px;
     display: none;
   }
 
-  /* Hamburger Button */
-  .hamburger-button {
-    display: block;
-  }
-
   .navbar button {
-    width: 36px;
-    height: 36px;
     gap: 6px;
-  }
-
-  .navbar button .item1,
-  .navbar button .item2,
-  .navbar button .item3 {
-    height: 2px;
   }
 
   /* Dropdown Menu */
   .dropdown_links {
-    padding: 30px 15px;
-    top: 80%;
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-  }
-
-  .dropdown_links a {
-    font-size: 16px;
-  }
-
-  .dropdown_links .info a {
-    font-size: 14px;
-  }
-
-  /* Logo */
-  .logo {
-    width: 153px;
-    height: 32px;
-  }
-
-  /* Show the Navbar and Dropdown when Button is clicked */
-  .navbar.active {
-    display: flex; /* Show navbar when active */
-  }
-
-  .dropdown_links.active {
-    display: flex; /* Show dropdown when active */
+    max-width: 250px;
   }
 }
-

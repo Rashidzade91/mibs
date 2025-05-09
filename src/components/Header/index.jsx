@@ -75,7 +75,7 @@ export default function Header() {
               </button>
             </nav>
             {show ? (
-              <div className={classes.dropdown_links} ref={menuRef}>
+              <div className={`${classes.dropdown_links} ${show ? "active" : ""}`} ref={menuRef}>
                 <Link to="./who">Biz kimik?</Link>
                 <a href="">Filiallar</a>
                 <a href="">Menyu</a>

@@ -10,14 +10,14 @@
 
 .about .about_title h1 {
   padding-top: 42px;
-  font-size: 3rem;
+  font-size: 48px;
   line-height: 125%;
   font-family: "d-b";
   color: var(--theme_black);
 }
 
 .about .about_title p {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-family: "d-r";
   line-height: 150%;
   color: #8398a2;
@@ -51,13 +51,32 @@
 }
 
 .platform .about_project h2 {
-  font-size: 2rem;
+  font-size: 32px;
   font-family: "d-r";
   line-height: 150%;
   color: var(--theme_black);
 }
 
-.platform .about_project p,
+.platform .about_project p {
+  font-size: 24px;
+  font-family: 'd-r';
+  line-height: 100%;
+  color: #0F121B;
+}
+
+.platform .about_project .design {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.platform .about_project .design p {
+  font-size: 24px;
+  font-family: "d-r";
+  line-height: 125%;
+  color: var(--theme_black);
+}
+
 .platform .about_project small {
   font-size: 24px;
   font-family: "d-r";
@@ -65,7 +84,12 @@
   color: var(--theme_black);
 }
 
-.platform .about_project span {
+.platform .about_project .design .program {
+  display: flex;
+  gap: 10px;
+}
+
+.platform .about_project .design .program span {
   background-color: #e4eaed;
   color: #6098b8;
   font-size: 18px;
@@ -212,12 +236,284 @@
   gap: 21px;
 }
 
+@media (max-width: 1200px) {
+  .about .about_container {
+    grid-template-columns: 1fr;
+  }
 
-/* Mobile Responsivlik - 576px */
-@media (max-width: 576px) {
+  .about .about_title h1 {
+    font-size: 36px;
+  }
+  
+  .about .about_data {
+    display: flex;
+  }
+
+  .platform .about_project h2 {
+    font-size: 30px;
+  }
+
+  .platform {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .other_project {
+    display: flex;
+  }
+
+  .other_project p {
+    font-size: 28px;
+  }
+
+  .platform .purpose h2 {
+    font-size: 28px;
+  }
+
+  .platform .feedback .decoration1 .left {
+    transform: translate(320px, -10px)
+  }
+
+  .card_data {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .img_div img {
+    width: max-content;
+  }
+}
+
+@media (max-width: 991px) {
+  .about .about_container {
+    grid-template-columns: 1fr;
+  }
+
+  .about .about_title h1 {
+    font-size: 30px;
+  }
+  
+  .about .about_title p {
+    font-size: 18px;
+  }
+
+  .about .about_data {
+    display: flex;
+  }
+
+  .platform .about_project h2 {
+    font-size: 28px;
+  }
+
+  .platform {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .other_project {
+    display: flex;
+  }
+
+  .other_project p {
+    font-size: 26px;
+  }
+
+  .other_project button span {
+    font-size: 18px;
+  }
+  .icon {
+    font-size: 19px;
+  }
+
+  .platform .about_project .design .program span {
+    font-size: 16px; /*qalsin*/
+  }
+
+  .platform .about_project .design p,
+  .platform .about_project p,
+  .platform .about_project small {
+    font-size: 22px;
+  }
+
+  .platform .purpose h2 {
+    font-size: 26px;
+  }
+
+  .platform .purpose span {
+    font-size: 16px;
+  }
+
+  .platform .purpose p {
+    font-size: 22px;
+  }
+
+  .platform .feedback h2 {
+    font-size: 28px;
+  }
+
+  .platform .feedback p {
+    font-size: 18px;
+  }
+
+  .platform .feedback .decoration1 .left {
+    transform: translate(320px, -10px)
+  }
+
+  .card_data {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .img_div img {
+    width: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .about .about_container {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    background-color: var(--text_white);
+  }
+
+  .about .about_title h1 {
+    font-size: 26px;
+  }
+  
+  .about .about_title p {
+    font-size: 18px;
+  }
+
   .about .about_data {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .platform .about_project h2 {
+    font-size: 26px;
+  }
+
+  .platform .about_project .design .program {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .platform {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .other_project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .other_project p {
+    font-size: 26px;
+  }
+
+  .card_data button {
+    background-color: #fddd0d;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 45px;
+    gap: 16px;
+  }
+
+  .card_data button {
+    width: 230px;
+    height: 50px;
+  }
+
+  .card_data button span {
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    font-family: "d-r";
+    color: #1d2028;
+  }
+  .icon {
+    font-size: 18px;
+  }
+
+  .platform .about_project .design .program span {
+    font-size: 16px;
+  }
+
+  .platform .about_project .design p,
+  .platform .about_project p,
+  .platform .about_project small {
+    font-size: 20px;
+  }
+
+  .platform .purpose h2 {
+    font-size: 26px;
+  }
+
+  .platform .purpose span {
+    font-size: 18px;
+  }
+
+  .platform .purpose p {
+    font-size: 20px;
+  }
+
+  .platform .feedback h2 {
+    font-size: 26px;
+  }
+
+  .platform .feedback p {
+    font-size: 18px;
+  }
+
+  .platform .feedback .decoration1 .left {
+    transform: translate(320px, -10px)
+  }
+
+  .card_data {
+    grid-template-columns: 1fr;
+  }
+
+  .img_div img {
+    width: 100%;
+  }
+}
+
+/* Mobile Responsivlik - 576px */
+@media (max-width: 576px) {
+  .about .about_container {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    background-color: var(--text_white);
+  }
+
+  .about .about_title h1 {
+    font-size: 24px;
+  }
+  
+  .about .about_title p {
+    font-size: 1rem;
+  }
+
+  .about .about_data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .platform .about_project h2 {
+    font-size: 24px;
+  }
+
+  .platform .about_project .design .program {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .platform {
@@ -234,26 +530,41 @@
     font-size: 24px;
   }
 
-  .other_project button {
+  .card_data button {
+    background-color: #fddd0d;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 45px;
+    gap: 16px;
+  }
+
+  .card_data button {
     width: 230px;
     height: 50px;
   }
 
-  .about .about_title h1 {
-    font-size: 24px;
+  .card_data button span {
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    font-family: "d-r";
+    color: #1d2028;
+  }
+  .icon {
+    font-size: 17px;
   }
 
-  .about .about_title p {
-    font-size: 1rem;
+  .platform .about_project .design .program span {
+    font-size: 14px;
   }
 
-  .platform .about_project h2 {
-    font-size: 24px;
-  }
-
+  .platform .about_project .design p,
   .platform .about_project p,
   .platform .about_project small {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .platform .purpose h2 {
@@ -287,10 +598,5 @@
   .img_div img {
     width: 100%;
   }
-
-  .platform .about_project p,
-.platform .about_project small {
-  font-size: 18px;
-}
 }
 

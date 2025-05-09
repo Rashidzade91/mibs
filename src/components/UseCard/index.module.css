@@ -57,9 +57,118 @@
   color: #1D2028;
 }
 
+@media (max-width: 1200px) {
+  .card_black {
+    padding: 0 16px;
+  }
+
+  .card_black .card_btn {
+    padding-bottom: 28px;
+  }
+
+  .card_black .card_btn button {
+    padding: 14px 18px;
+    width: auto;
+  }
+
+  .card_black .card_btn button span {
+    font-size: 20px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+
+  .card_black h1,
+  .card_black h1 span {
+    font-size: 28px;
+    padding: 28px 0 24px;
+  }
+  
+  .card_black p {
+    font-size: 18px;
+    padding: 22px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .card_black {
+    padding: 0 16px;
+  }
+
+  .card_black .card_btn {
+    padding-bottom: 28px;
+  }
+
+  .card_black .card_btn button {
+    padding: 14px 18px;
+    width: auto;
+  }
+
+  .card_black .card_btn button span {
+    font-size: 18px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .card_black h1,
+  .card_black h1 span {
+    font-size: 24px;
+    padding: 28px 0 24px;
+  }
+  
+  .card_black p {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .card_black {
+    padding: 0 16px;
+  }
+
+  .card_black .card_btn {
+    padding-bottom: 28px;
+  }
+
+  .card_black .card_btn button {
+    padding: 14px 18px;
+    width: auto;
+  }
+
+  .card_black .card_btn button span {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .card_black h1,
+  .card_black h1 span {
+    font-size: 20px;
+    padding: 28px 0 24px;
+  }
+  
+  .card_black p {
+    font-size: 18px;
+    padding: 24px;
+  }
+
+}
+
 @media (max-width: 576px) {
   .card_black {
     padding: 0 16px;
+  }
+
+  .card_black .card_btn {
+    padding-bottom: 28px;
   }
 
   .card_black .card_btn button {
@@ -71,13 +180,19 @@
     font-size: 14px;
   }
 
+  .icon {
+    font-size: 20px;
+  }
+
   .card_black h1,
   .card_black h1 span {
     font-size: 18px;
+    padding: 28px 0 24px;
   }
   
   .card_black p {
     font-size: 16px;
+    padding: 24px;
   }
 
 }

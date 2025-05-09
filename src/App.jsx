@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import "./App.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import ErrorPage from "./components/ErrorPage";
 import Layout from "./components/Layout";
 import Who from "./components/who";

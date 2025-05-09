@@ -90,6 +90,240 @@
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  /* Başlıq */
+  .title h1 {
+    text-indent: 0 !important; 
+    text-align: center; 
+    font-size: 50px; 
+  }
+
+  /* Ümumi xidmətlər bölməsi */
+  .services .services_container {
+    grid-template-columns: 1fr !important; 
+  }
+
+  .services .services_main,
+  .services .services_context {
+    padding: 10px;
+  }
+
+  /* Hər bir xidmətin bölməsi */
+  .services .section {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .services .section_icon {
+    display: none;
+  }
+
+  .services .section_data {
+    padding: 16px 0 !important; /* Mətnin paddingi kiçildilir*/
+  }
+
+  .services .section .section_data h2 {
+    font-size: 28px;
+  }
+
+  .services .section .section_data p {
+    font-size: 26px;
+  }
+
+  .services .offer {
+    padding: 0; /* Təklif bölməsi üçün padding */
+    text-align: center; /* Mərkəzləşdirilir */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+  }
+
+  .services .offer p {
+    font-size: 34px;
+    font-family: 'd-b';
+    padding-top: 48px;
+  }
+
+  /* Şəkil */
+  .frame img {
+    width: 100%; /* Şəkil ekran ölçüsünə uyğunlaşdırılır */
+    height: auto; /* Hündürlük proporsional saxlanılır */
+  }
+
+  /* Səhifənin alt hissəsindəki bölmələr */
+  .services .section .section_data h3 {
+    font-size: 30px; /* H3 başlıqlarını kiçildir */
+  }
+
+  .services .section .section_data p {
+    font-size: 26x; /* P mətnini kiçildir */
+  }
+
+  /* İkonların ölçüsü */
+  .services .section .icon {
+    width: 40px; /* İkonları kiçildir */
+    height: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Başlıq */
+  .title h1 {
+    text-indent: 0 !important; 
+    text-align: center; 
+    font-size: 42px; 
+  }
+
+  /* Ümumi xidmətlər bölməsi */
+  .services .services_container {
+    grid-template-columns: 1fr !important; 
+    
+  }
+
+  .services .services_main,
+  .services .services_context {
+    padding: 10px;
+  }
+
+  /* Hər bir xidmətin bölməsi */
+  .services .section {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .services .section_icon {
+    display: none;
+  }
+
+  .services .section_data {
+    padding: 16px 0 !important; /* Mətnin paddingi kiçildilir*/
+  }
+
+  .services .section .section_data h2 {
+    font-size: 24px;
+  }
+
+  .services .section .section_data p {
+    font-size: 22px;
+  }
+
+  .services .offer {
+    padding: 0; /* Təklif bölməsi üçün padding */
+    text-align: center; /* Mərkəzləşdirilir */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+  }
+
+  .services .offer p {
+    font-size: 30px;
+    font-family: 'd-b';
+    padding-top: 48px;
+  }
+
+  /* Şəkil */
+  .frame img {
+    width: 100%; /* Şəkil ekran ölçüsünə uyğunlaşdırılır */
+    height: auto; /* Hündürlük proporsional saxlanılır */
+  }
+
+  /* Səhifənin alt hissəsindəki bölmələr */
+  .services .section .section_data h3 {
+    font-size: 26px; /* H3 başlıqlarını kiçildir */
+  }
+
+  .services .section .section_data p {
+    font-size: 22x; /* P mətnini kiçildir */
+  }
+
+  /* İkonların ölçüsü */
+  .services .section .icon {
+    width: 40px; /* İkonları kiçildir */
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Başlıq */
+  .title h1 {
+    text-indent: 0 !important; 
+    text-align: center; 
+    font-size: 32px; 
+  }
+
+  /* Ümumi xidmətlər bölməsi */
+  .services .services_container {
+    grid-template-columns: 1fr !important; 
+    
+  }
+
+  .services .services_main,
+  .services .services_context {
+    padding: 10px;
+  }
+
+  /* Hər bir xidmətin bölməsi */
+  .services .section {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .services .section_icon {
+    display: none;
+  }
+
+  .services .section_data {
+    padding: 16px 0 !important; /* Mətnin paddingi kiçildilir*/
+  }
+
+  .services .section .section_data h2 {
+    font-size: 20px;
+  }
+
+  .services .section .section_data p {
+    font-size: 18px;
+  }
+
+  .services .offer {
+    padding: 0; /* Təklif bölməsi üçün padding */
+    text-align: center; /* Mərkəzləşdirilir */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+  }
+
+  .services .offer p {
+    font-size: 26px;
+    font-family: 'd-b';
+    padding-top: 48px;
+  }
+
+  .services .offer span {
+    font-size: 18px;
+  }
+
+  /* Şəkil */
+  .frame img {
+    width: 100%; /* Şəkil ekran ölçüsünə uyğunlaşdırılır */
+    height: auto; /* Hündürlük proporsional saxlanılır */
+  }
+
+  /* Səhifənin alt hissəsindəki bölmələr */
+  .services .section .section_data h3 {
+    font-size: 22px; /* H3 başlıqlarını kiçildir */
+  }
+
+  .services .section .section_data p {
+    font-size: 18x; /* P mətnini kiçildir */
+  }
+
+  /* İkonların ölçüsü */
+  .services .section .icon {
+    width: 40px; /* İkonları kiçildir */
+    height: 40px;
+  }
+}
+
 @media (max-width: 576px) {
   /* Başlıq */
   .title h1 {
@@ -120,7 +354,7 @@
   }
 
   .services .section_data {
-    padding: 10px 0 !important; /* Mətnin paddingi kiçildilir*/
+    padding: 16px 0 !important; /* Mətnin paddingi kiçildilir*/
   }
 
   .services .section .section_data h2 {
@@ -134,10 +368,19 @@
   .services .offer {
     padding: 0; /* Təklif bölməsi üçün padding */
     text-align: center; /* Mərkəzləşdirilir */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
   }
 
   .services .offer p {
-    font-size: 18px;
+    font-size: 24px;
+    font-family: 'd-b';
+    padding-top: 48px;
+  }
+
+  .services .offer span {
+    font-size: 16px;
   }
 
   /* Şəkil */
@@ -160,7 +403,4 @@
     width: 40px; /* İkonları kiçildir */
     height: 40px;
   }
-
-  /* Kadrın (frame) altındakı mətn */
-  
 }

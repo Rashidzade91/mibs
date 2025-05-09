@@ -61,7 +61,7 @@ export default function Services() {
             </div>
             <div className="col-md-6 d-flex">
               <div className={classes.offer}>
-                <p>Biz şirkətlərə müxtəlif xidmətlər təklif edirik!</p>
+                <p>Biz şirkətlərə müxtəlif <br /> xidmətlər təklif edirik!</p>
                 <span className="d-flex d-md-none">İstənilən mövzuda layihələr icra edirik!</span>
               </div>
             </div>
