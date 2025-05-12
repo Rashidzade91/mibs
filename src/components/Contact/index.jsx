@@ -31,7 +31,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className={classes.background}>
+      <main className={classes.background}>
         <form className={classes.contact_form} onSubmit={handleSubmit}>
           <div className="container">
             <div className="row">
@@ -106,9 +106,8 @@ export default function Contact() {
             </div>
           </div>
         </form>
-      </div>
-
-      <div className={classes.contact_frame}>
+      </main>
+      <section className={classes.contact_frame}>
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -125,12 +124,10 @@ export default function Contact() {
                   <h4>Əlaqə nömrəsi</h4>
                   <a href="tel:+994554040910">+994 55 404 09 10</a>
                 </div>
-
                 <div>
                   <h4>E-mail</h4>
                   <a href="mailto:infomibs.az">infomibs.az</a>
                 </div>
-
                 <div>
                   <h4>Ünvan</h4>
                   <a
@@ -142,10 +139,8 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div
-              className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"
-              style={{ padding: "36px 0 48px" }}
-            >
+            <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"
+              style={{ padding: "36px 0 48px" }}>
               <iframe
                 className={classes.map_frame}
                 src="https://www.google.com/maps?q=Ə.+Rəcəbli+11b,+Bakı&output=embed"
@@ -156,7 +151,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -22,24 +22,25 @@ export default function Who() {
       <section className={classes.main}>
         <div className="container">
           <div className="row">
-            <div className={classes.component}>
-              <div>
-                <a href="">Onlayn mağazalar</a>
-              </div>
-              <div>
-                <a href="">Korporativ saytlar</a>
-              </div>
-              <div>
-                <a href="">Veb tətbiqlər</a>
-              </div>
-              <div>
-                <a href="">Kargo sistemləri</a>
+            <div className="col-12">
+              <div className={classes.component}>
+                <div>
+                  <a href="">Onlayn mağazalar</a>
+                </div>
+                <div>
+                  <a href="">Korporativ saytlar</a>
+                </div>
+                <div>
+                  <a href="">Veb tətbiqlər</a>
+                </div>
+                <div>
+                  <a href="">Kargo sistemləri</a>
+                </div>
               </div>
             </div>
-            <div className="row">
-              <div>
-               <div className={classes.main_group}>
-               <div className={classes.item1}>
+            <div className="col-12">
+              <div className={classes.main_group}>
+                <div className={classes.item1}>
                   <h3>Üç formalaşmış qrupdan ibarət peşəkar komanda</h3>
                   <h5>
                     Komandamız əvvəllər öz sahələrində uzun müddət fərdi
@@ -63,9 +64,8 @@ export default function Who() {
                     Əsas məqsədimiz <br /> uzunmüddətli əməkdaşlıqdır.
                   </h2>
                 </div>
-               </div>
-                
-               <div className={classes.information}>
+              </div>
+              <div className={classes.information}>
                 <div className={classes.item3}>
                   <h4>
                     Bizim rəqəmsal agentlik 2020-ci ildə rəsmi olaraq dövlət
@@ -94,7 +94,6 @@ export default function Who() {
                   <div className={classes.btn}>
                     <button>Müraciət et</button>
                   </div>
-                </div>
                 </div>
               </div>
             </div>

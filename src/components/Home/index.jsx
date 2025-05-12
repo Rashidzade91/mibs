@@ -238,7 +238,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={classes.it_services}>
+      <div className={classes.it_services}>
         <div className="container">
           <div className="row">
             <div className={classes.it_title}>
@@ -256,7 +256,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <section className={classes.quality}>
         <div className="container">
@@ -272,7 +272,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <div className="container">
           <div className={classes.section}>
             <div className={classes.card_text}>
@@ -342,39 +341,38 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <div>
           <img src={img_main} alt="" className="w-100" />
         </div>
       </section>
 
       <section className={classes.it_texno}>
-            <div className="container">
-              <div className="row">
-                <div className={classes.texnology}>
-                  <h3>Müştərilərimiz</h3>
-                  <p>Bizə müraciət edən müştərilərimizi bizdən məmnun</p>
-                  <p>şəkildə ayrılmaları əsas prinspimizdir.</p>
-                </div>
-                <Slider {...settings}>
-                  <div>
-                    <img src={abma} alt="" />
-                  </div>
-                  <div>
-                    <img src={auditor} alt="" />
-                  </div>
-                  <div>
-                    <img src={kargo} alt="" />
-                  </div>
-                  <div>
-                    <img src={kobia1} alt="" />
-                  </div>
-                  <div>
-                    <img src={cdek} alt="" />
-                  </div>
-                </Slider>
-              </div>
+        <div className="container">
+          <div className="row">
+            <div className={classes.texnology}>
+              <h3>Müştərilərimiz</h3>
+              <p>Bizə müraciət edən müştərilərimizi bizdən məmnun</p>
+              <p>şəkildə ayrılmaları əsas prinspimizdir.</p>
             </div>
+            <Slider {...settings}>
+              <div>
+                <img src={abma} alt="" />
+              </div>
+              <div>
+                <img src={auditor} alt="" />
+              </div>
+              <div>
+                <img src={kargo} alt="" />
+              </div>
+              <div>
+                <img src={kobia1} alt="" />
+              </div>
+              <div>
+                <img src={cdek} alt="" />
+              </div>
+            </Slider>
+          </div>
+        </div>
       </section>
     </>
   );

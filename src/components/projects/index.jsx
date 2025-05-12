@@ -21,9 +21,6 @@ export default function Projects() {
               </h2>
             </div>
           </div>
-        </div>
-
-        <div className="row">
           <div className="col-12">
             <div className={classes.main_container}>
               {mockData.map((item) => (

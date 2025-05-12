@@ -29,7 +29,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
         <div className="row">
           <div className={classes.platform}>
             <div className="col-md-6">
@@ -101,7 +100,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
         <div className="row">
           <div className={classes.other_project}>
             <p>Digər layihələr</p>
@@ -111,7 +109,6 @@ export default function About() {
             </button>
           </div>
         </div>
-
         <div className="row">
           <div className={classes.card_data}>
             {data.map((item) => (

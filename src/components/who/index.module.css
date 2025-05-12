@@ -60,18 +60,19 @@
 }
 
 /* Information Section */
+.main .information,
 .main .main_group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 54px;
-  padding-bottom: 54px;
 }
 
+.main .main_group {
+  padding-bottom: 54px;
+
+}
 
 .main .information {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 54px;
   padding-bottom: 266px;
 }
 
