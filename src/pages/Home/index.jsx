@@ -1,9 +1,9 @@
-import HomeCard from "../HomeCard";
+import HomeCard from "../../components/HomeCard";
 import { homeData } from "./homeData";
 import classes from "./index.module.css";
 import { CgArrowBottomRight } from "react-icons/cg";
-import { useCard } from "../UseCard/data";
-import UseCard from "../UseCard";
+import { useCard } from "../../components/UseCard/data";
+import UseCard from "../../components/UseCard";
 import kobia from "../../assets/kobia.png";
 import construction from "../../assets/construction.png";
 import Group from "../../assets/Group.png";
@@ -21,41 +21,9 @@ import kobia1 from "../../assets/kobia1.png";
 import cdek from "../../assets/cdek.png";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import Slider from "react-slick";
+import {slide} from "./slide"
 
 export default function Home() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 5,
-        },
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  };
 
   return (
     <>
@@ -214,7 +182,7 @@ export default function Home() {
               <p>Müasir texnologiyalardan istifadə etmək işimizin</p>
               <p>əsas prinsipidir.</p>
             </div>
-            <Slider {...settings}>
+            <Slider {...slide}>
               <div>
                 <img src={FrameS} alt="" />
               </div>
@@ -354,7 +322,7 @@ export default function Home() {
               <p>Bizə müraciət edən müştərilərimizi bizdən məmnun</p>
               <p>şəkildə ayrılmaları əsas prinspimizdir.</p>
             </div>
-            <Slider {...settings}>
+            <Slider {...slide}>
               <div>
                 <img src={abma} alt="" />
               </div>

@@ -1,6 +1,6 @@
 import classes from "./index.module.css";
 
-export default function Who() {
+export default function MeetUs() {
   return (
     <>
       <section className={classes.who}>

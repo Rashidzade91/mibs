@@ -2,15 +2,15 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import "./App.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./pages/ErrorPage";
 import Layout from "./components/Layout";
-import Who from "./components/who";
-import Services from "./components/services";
-import Projects from "./components/projects";
-import About from "./components/About";
-import Development from "./components/Development";
-import Home from "./components/Home";
-import Contact from "./components/contact";
+import Services from "./pages/Services";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
+import Development from "./pages/Development";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import MeetUs from "./pages/MeetUs";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       errorElement: <ErrorPage />,
       children: [
         {path: '/', element: <Home />},
-        { path: "/who", element: <Who /> },
+        { path: "/meetUs", element: <MeetUs /> },
         { path: "/contact", element: <Contact /> },
         { path: "/services", element: <Services /> },
         { path: '/projects', element: <Projects />},

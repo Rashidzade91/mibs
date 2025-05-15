@@ -6,19 +6,36 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const { pathname } = useLocation();
-  const blackHeaderRouters = ["/who", "/services", "/development", "/home", "/", ""];
+  const blackHeaderRouters = [
+    "/meetUs",
+    "/services",
+    "/development",
+    "/home",
+    "/",
+    "",
+  ];
   const isBlack = blackHeaderRouters.includes(pathname);
-  
+
   const [show, setShow] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
   const menuRef = useRef(null);
+  const buttonRef = useRef(null);
   const toggleDropdown = () => {
     setShow(!show);
   };
 
+  const handleLinkClick = () => {
+    setShow(false); // Menyunu bağlayır
+  };
+
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(e.target)
+      ) {
         setShow(false);
       }
     };
@@ -29,30 +46,28 @@ export default function Header() {
     };
   }, []);
 
-
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
 
-    window.addEventListener('resize', handleResize);
-    
- 
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const isMobile = width <= 576;
-  
+
   return (
     <header className={isBlack ? classes.black_header : classes.white_header}>
       <div className="container">
         <div className="row">
           <div className={classes.header_container}>
-            <a href="#" className={classes.logo}>
+            <a href="/home" className={classes.logo}>
               <img src={isBlack || isMobile ? logo_white : logo_black} alt="" />
             </a>
             <nav className={classes.navbar}>
               <NavLink
                 className={({ isActive }) => (isActive ? "active" : null)}
-                to="/who"
+                to="/meetUs"
               >
                 Biz kimik ?
               </NavLink>
@@ -68,15 +83,18 @@ export default function Header() {
               >
                 Portfolio
               </NavLink>
-              <button onClick={toggleDropdown}>
+              <button onClick={toggleDropdown} ref={buttonRef}>
                 <span className={classes.item1}></span>
                 <span className={classes.item2}></span>
                 <span className={classes.item3}></span>
               </button>
             </nav>
             {show ? (
-              <div className={`${classes.dropdown_links} ${show ? "active" : ""}`} ref={menuRef}>
-                <Link to="./who">Biz kimik?</Link>
+              <div
+                className={`${classes.dropdown_links} ${show ? "active" : ""}`}
+                ref={menuRef}
+              >
+                <Link to="./meetUs" onClick={handleLinkClick}>Biz kimik?</Link>
                 <a href="">Filiallar</a>
                 <a href="">Menyu</a>
                 <a href="">Qiymətlər</a>
