@@ -1,9 +1,9 @@
-import HomeCard from "../../components/HomeCard";
+import HomeCard from "../../components/cards/HomeCard";
 import { homeData } from "./homeData";
 import classes from "./index.module.css";
 import { CgArrowBottomRight } from "react-icons/cg";
-import { useCard } from "../../components/UseCard/data";
-import UseCard from "../../components/UseCard";
+import { useCard } from "../../components/cards/UseCard/data";
+import UseCard from "../../components/cards/UseCard";
 import kobia from "../../assets/kobia.png";
 import construction from "../../assets/construction.png";
 import Group from "../../assets/Group.png";

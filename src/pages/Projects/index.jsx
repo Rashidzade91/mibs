@@ -1,5 +1,5 @@
 import classes from "./index.module.css";
-import Card from "../../components/Card";
+import Card from "../../components/cards/Card";
 import { mockData } from "./data";
 
 export default function Projects() {

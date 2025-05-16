@@ -1,6 +1,6 @@
 import classes from "./index.module.css";
-import Rectangle1 from "../../assets/Rectangle1.png";
-import Rectangle2 from "../../assets/Rectangle2.png";
+import Rectangle1 from "../../../assets/Rectangle1.png";
+import Rectangle2 from "../../../assets/Rectangle2.png";
 
 const HomeCard = ({title, description }) => {
   return (

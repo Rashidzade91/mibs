@@ -3,7 +3,7 @@ import "./App.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import ErrorPage from "./pages/ErrorPage";
-import Layout from "./components/Layout";
+import Layout from "./components/Layout/Layout";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import About from "./pages/About";

@@ -1,6 +1,6 @@
 import classes from "./index.module.css";
-import logo_white from "../../assets/logo_white.svg";
-import logo_black from "../../assets/logo_black.svg";
+import logo_white from "../../../assets/logo_white.svg";
+import logo_black from "../../../assets/logo_black.svg";
 import { Link, NavLink, useLocation } from "react-router";
 import { useEffect, useRef, useState } from "react";
 
