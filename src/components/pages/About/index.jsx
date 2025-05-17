@@ -1,8 +1,8 @@
 import classes from "./index.module.css";
-import platform from "../../assets/platform.png";
-import decoration from "../../assets/decoration.png";
+import platform from "/src/assets/platform.png";
+import decoration from "/src/assets/decoration.png";
 import { CgArrowBottomRight } from "react-icons/cg";
-import Card from "../../components/cards/Card";
+import Card from "../../cards/Card";
 import { data } from "./data";
 
 export default function About() {

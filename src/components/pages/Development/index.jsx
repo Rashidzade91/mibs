@@ -1,7 +1,7 @@
 import classes from "./index.module.css";
 import { AiFillCaretRight } from "react-icons/ai";
-import phone from "../../assets/phone.png";
-import game from "../../assets/interface.png";
+import phone from "/src/assets/phone.png";
+import game from "/src/assets/interface.png";
 
 export default function Development() {
   return (

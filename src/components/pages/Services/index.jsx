@@ -1,6 +1,6 @@
 import { FaRegCopy } from "react-icons/fa6";
 import classes from "./index.module.css";
-import computer from "../../assets/computer.svg";
+import computer from "/src/assets/computer.svg";
 
 export default function Services() {
   return (
