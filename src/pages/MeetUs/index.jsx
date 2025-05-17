@@ -6,15 +6,17 @@ export default function MeetUs() {
       <section className={classes.who}>
         <div className="container">
           <div className="row">
-            <div className={classes.main_container}>
-              <h3>
-                Rəqəmsallaşma istiqamətində <br /> xidmətlər əldə edəcəyiniz
-                ünvan
-              </h3>
-              <p>
-                Biz ilk öncə, müştərini dinləyirik, başa düşürük və onun <br />{" "}
-                biznesinin inkişafı üçün fərdi həll yolları yaradırıq!
-              </p>
+            <div className="col-12">
+              <div className={classes.main_container}>
+                <h3>
+                  Rəqəmsallaşma istiqamətində <br /> xidmətlər əldə edəcəyiniz
+                  ünvan
+                </h3>
+                <p>
+                  Biz ilk öncə, müştərini dinləyirik, başa düşürük və onun{" "}
+                  <br /> biznesinin inkişafı üçün fərdi həll yolları yaradırıq!
+                </p>
+              </div>
             </div>
           </div>
         </div>

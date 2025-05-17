@@ -21,33 +21,34 @@ import kobia1 from "../../assets/kobia1.png";
 import cdek from "../../assets/cdek.png";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import Slider from "react-slick";
-import {slide} from "./slide"
+import { slide } from "./slide";
 
 export default function Home() {
-
   return (
     <>
       <section className={classes.home}>
         <div className={classes.home_title}>
           <div className="container">
-            <div className={classes.home_about}>
-              <div>
-                <h1>Rəqəmsal dünya üçün innovativ həllər</h1>
-              </div>
-              <div className={classes.home_btn}>
-                <p>
-                  Biz istənilən mövzuda və mürəkkəblikdə layihələr icra edirik!
-                  Veb-saytlar yaradır və digər rəqəmsal həllər təklif edirik!
-                </p>
-                <button>
-                  <span>Daha ətraflı</span>{" "}
-                  <CgArrowBottomRight className={classes.icon} />{" "}
-                </button>
+            <div className="row">
+              <div className={classes.home_about}>
+                <div>
+                  <h1>Rəqəmsal dünya üçün innovativ həllər</h1>
+                </div>
+                <div className={classes.home_btn}>
+                  <p>
+                    Biz istənilən mövzuda və mürəkkəblikdə layihələr icra
+                    edirik! Veb-saytlar yaradır və digər rəqəmsal həllər təklif
+                    edirik!
+                  </p>
+                  <button>
+                    <span>Daha ətraflı</span>{" "}
+                    <CgArrowBottomRight className={classes.icon} />{" "}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
         <div className="container">
           <div className="row">
             <div className={classes.home_container}>
@@ -84,7 +85,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
             <div className={classes.useCard}>
               {useCard.map((item) => (
                 <UseCard {...item} key={item.id} />
@@ -110,7 +110,6 @@ export default function Home() {
                   <p className={classes.more}>Daha çoxu</p>
                 </div>
               </div>
-
               <div className={classes.card_construction}>
                 <div className={classes.gradient}>
                   <h3>Hər hansı layihəniz varmı? </h3>
@@ -144,12 +143,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
                 <div>
                   <div className={classes.img_div}>
                     <img src={kobia} alt="" />
                   </div>
-
                   <div className={classes.info_card}>
                     <p>
                       İnvestor axtarışı, françayzinq investisiya təkliflərinin
@@ -165,7 +162,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
               <div className={`${classes.more_btn} col-lg-6 d-lg-none`}>
                 <p className={classes.more}>Daha çoxu</p>
               </div>
@@ -206,14 +202,13 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={classes.it_services}>
+      <section className={classes.it_services}>
         <div className="container">
           <div className="row">
             <div className={classes.it_title}>
               <h4>Ən yaxşı IT Xidməti</h4>
               <p>Hər bir biznes sahəsi üçün</p>
             </div>
-
             <div className={classes.it_list}>
               <p>Turizm</p>
               <p>E-ticarət</p>
@@ -224,7 +219,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section className={classes.quality}>
         <div className="container">
@@ -274,7 +269,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
             <div className={classes.card_text}>
               <div className={classes.quality_card}>
                 <div className={classes.section_icon}>
