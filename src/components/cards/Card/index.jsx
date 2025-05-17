@@ -1,5 +1,5 @@
 import classes from './index.module.css'
-import group from "../../../assets/group.png";
+import group from "../../../assets/Group.png";
 
 
 const Card = ({ heading, title, desc }) => {
