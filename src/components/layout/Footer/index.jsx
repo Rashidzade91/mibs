@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import classes from "./index.module.css";
 import logo_white from '../../../assets/logo_white.svg'
 
@@ -15,7 +15,7 @@ export default function Footer() {
               <ul>
                 <li className={classes.li_head}>Xidmətlərimiz</li>
                 <li>
-                  <Link to="/who">Biz kimik ?</Link>
+                  <Link to="/meetUs">Biz kimik ?</Link>
                 </li>
                 <li>
                   <Link to="/portfolio">Portfolio</Link>
