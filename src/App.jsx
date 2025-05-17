@@ -4,13 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ErrorPage from "./pages/ErrorPage";
 import Layout from "./components/layout/Layout";
-import Services from "./pages/Services";
-import Projects from "./pages/Projects";
-import About from "./pages/About";
-import Development from "./pages/Development";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import MeetUs from "./pages/MeetUs";
+import Services from "./components/pages/Services";
+import Projects from "./components/pages/Projects";
+import About from "./components/pages/About";
+import Development from "./components/pages/Development";
+import Home from "./components/pages/Home";
+import Contact from "./components/pages/Contact";
+import MeetUs from "./components/pages/MeetUs";
 
 
 function App() {
