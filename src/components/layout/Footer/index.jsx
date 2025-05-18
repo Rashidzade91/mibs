@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="row">
           <div className={classes.footer_section}>
             <div className={classes.img_div}>
-              <img src={logo_white} alt=""/>
+              <a href="/home"><img src={logo_white} alt=""/></a>
             </div>
             <div className={classes.footer_menu}>
               <ul>

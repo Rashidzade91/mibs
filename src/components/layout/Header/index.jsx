@@ -100,6 +100,7 @@ export default function Header() {
                 <a href="">Qiymətlər</a>
                 <a href="/projects">Layihələrimiz</a>
                 <a href="/development">Fəaliyyətlərimiz</a>
+                <a href="/services">Xidmətlərimiz</a>
                 <div className={classes.info}>
                   <a href="#">info@anticafeconcept.com</a>
                   <a href="tel:+994518323113">+(994-51) 832-31-13</a>
