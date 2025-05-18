@@ -420,7 +420,7 @@
 
 .slider {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .slider-wrapper img {
@@ -1221,7 +1221,7 @@
     padding-bottom: 48px;
   }
   .it_services .it_title {
-    padding: 30px 0 48px;
+    padding: 30px 10px 48px;
   }
 
   .it_services .it_title h4 {

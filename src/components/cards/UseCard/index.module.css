@@ -157,7 +157,7 @@
   
   .card_black p {
     font-size: 18px;
-    padding: 24px;
+    padding: 24px 0;
   }
 
 }
@@ -192,10 +192,12 @@
   
   .card_black p {
     font-size: 16px;
-    padding: 24px;
+    padding: 24px 0;
   }
 
 }
+
+
 
 
 
