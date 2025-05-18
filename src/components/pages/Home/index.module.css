@@ -1305,3 +1305,21 @@
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .card_selected .useCard_title .theme {
+    font-size: 13px;
+  }
+
+  .construction .construction_title p {
+    font-size: 15px; /* Kiçik mətn ölçüsü */
+  }
+
+  .texnology p {
+    font-size: 14px;
+  }
+
+  .quality .quality_title p {
+    font-size: 12px; /* Kiçik mətn ölçüsü */
+  }
+}
