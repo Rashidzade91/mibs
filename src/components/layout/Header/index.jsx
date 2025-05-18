@@ -79,7 +79,7 @@ export default function Header() {
               </NavLink>
               <NavLink
                 className={({ isActive }) => (isActive ? "active" : null)}
-                to="/contact"
+                to="/about"
               >
                 Portfolio
               </NavLink>

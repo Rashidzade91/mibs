@@ -18,7 +18,7 @@ export default function Footer() {
                   <Link to="/meetUs">Biz kimik ?</Link>
                 </li>
                 <li>
-                  <Link to="/portfolio">Portfolio</Link>
+                  <Link to="/about">Portfolio</Link>
                 </li>
                 <li>
                   <Link to="/contact">Əlaqə</Link>
