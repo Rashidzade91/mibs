@@ -174,4 +174,9 @@
   }
 }
 
+@media (max-width: 480px) {
+  .projects .projects_head h2 p {
+    font-size: 13px;
+  }
+}
 

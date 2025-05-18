@@ -588,7 +588,7 @@
   }
 
   .platform .feedback .decoration1 .left {
-    transform: translate(320px, -10px)
+    transform: translate(290px, -10px)
   }
 
   .card_data {
@@ -597,6 +597,12 @@
 
   .img_div img {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .platform .feedback .decoration1 .left {
+    transform: translate(220px, -10px)
   }
 }
 
