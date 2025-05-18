@@ -341,6 +341,7 @@
   .services .services_main,
   .services .services_context {
     padding: 10px;
+    top: -5%;
   }
 
   /* Hər bir xidmətin bölməsi */
@@ -381,12 +382,14 @@
 
   .services .offer span {
     font-size: 16px;
+    color: #0000004D;
   }
 
   /* Şəkil */
   .frame img {
     width: 100%; /* Şəkil ekran ölçüsünə uyğunlaşdırılır */
     height: auto; /* Hündürlük proporsional saxlanılır */
+    margin-top: -5%;
   }
 
   /* Səhifənin alt hissəsindəki bölmələr */

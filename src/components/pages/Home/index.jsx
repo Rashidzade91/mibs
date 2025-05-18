@@ -178,26 +178,28 @@ export default function Home() {
               <p>Müasir texnologiyalardan istifadə etmək işimizin</p>
               <p>əsas prinsipidir.</p>
             </div>
-            <Slider {...slide}>
-              <div>
-                <img src={FrameS} alt="" />
-              </div>
-              <div>
-                <img src={FrameC} alt="" />
-              </div>
-              <div>
-                <img src={FrameQ} alt="" />
-              </div>
-              <div>
-                <img src={FrameM} alt="" />
-              </div>
-              <div>
-                <img src={FrameL} alt="" />
-              </div>
-              <div>
-                <img src={FrameB} alt="" />
-              </div>
-            </Slider>
+            <div className={classes.slider}>
+              <Slider {...slide}>
+                <div>
+                  <img src={FrameS} alt="" />
+                </div>
+                <div>
+                  <img src={FrameC} alt="" />
+                </div>
+                <div>
+                  <img src={FrameQ} alt="" />
+                </div>
+                <div>
+                  <img src={FrameM} alt="" />
+                </div>
+                <div>
+                  <img src={FrameL} alt="" />
+                </div>
+                <div>
+                  <img src={FrameB} alt="" />
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
       </section>
@@ -316,23 +318,25 @@ export default function Home() {
               <p>Bizə müraciət edən müştərilərimizi bizdən məmnun</p>
               <p>şəkildə ayrılmaları əsas prinspimizdir.</p>
             </div>
-            <Slider {...slide}>
-              <div>
-                <img src={abma} alt="" />
-              </div>
-              <div>
-                <img src={auditor} alt="" />
-              </div>
-              <div>
-                <img src={kargo} alt="" />
-              </div>
-              <div>
-                <img src={kobia1} alt="" />
-              </div>
-              <div>
-                <img src={cdek} alt="" />
-              </div>
-            </Slider>
+            <div className={classes.slider}>
+              <Slider {...slide}>
+                <div>
+                  <img src={abma} alt="" />
+                </div>
+                <div>
+                  <img src={auditor} alt="" />
+                </div>
+                <div>
+                  <img src={kargo} alt="" />
+                </div>
+                <div>
+                  <img src={kobia1} alt="" />
+                </div>
+                <div>
+                  <img src={cdek} alt="" />
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
       </section>

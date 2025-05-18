@@ -151,8 +151,9 @@
     font-size: 24px;
   }
 
-  .projects .projects_head p {
+  .projects .projects_head h2 p {
     font-size: 14px; /* P parqrafın ölçüsünü kiçiltmək */
+    color: #8398A2B2;
   }
 
   .projects .projects_head h1 span {

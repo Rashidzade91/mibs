@@ -418,6 +418,17 @@
   padding-bottom: 84px;
 }
 
+.slider {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.slider-wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* alt boşluq (whitespace) problemini də aradan qaldırır */
+}
+
 @media (max-width: 1200px) {
   /* HOME Section */
   .home .home_title .home_about {

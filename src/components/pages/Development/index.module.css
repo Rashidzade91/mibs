@@ -344,6 +344,17 @@
   }
 }
 
+@media (max-width: 480px) {
+  .store .video_container iframe {
+    max-height: -webkit-fill-available;
+  }
+
+  .store .video_container {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
 
 
 
