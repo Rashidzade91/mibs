@@ -2,7 +2,7 @@ import HomeCard from "../../cards/HomeCard";
 import { homeData } from "./homeData";
 import classes from "./index.module.css";
 import { CgArrowBottomRight } from "react-icons/cg";
-import { useCard } from "/src/components/cards/useCard/data";
+import { data } from "./data";
 import UseCard from "../../cards/UseCard";
 import kobia from "/src/assets/kobia.png";
 import construction from "/src/assets/construction.png";
@@ -86,7 +86,7 @@ export default function Home() {
               </div>
             </div>
             <div className={classes.useCard}>
-              {useCard.map((item) => (
+              {data.map((item) => (
                 <UseCard {...item} key={item.id} />
               ))}
             </div>

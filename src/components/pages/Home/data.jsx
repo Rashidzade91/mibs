@@ -1,4 +1,4 @@
-export const useCard = [
+export const data = [
     {
       id: 1,
       title: "Veb tətbiqlərin hazırlanması",
