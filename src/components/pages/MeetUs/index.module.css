@@ -551,4 +551,16 @@
   }
 }
 
+@media (max-width: 480px) {
+  .main .component {
+    grid-template-columns: 1fr;
+}
+
+.who .main_container {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
 
