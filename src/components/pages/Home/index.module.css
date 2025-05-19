@@ -45,6 +45,7 @@
   line-height: 100%;
   font-family: "d-r";
   color: #1d2028;
+  white-space: nowrap;    
 }
 
 .home .home_title .icon {
@@ -1251,7 +1252,7 @@
   }
 
   .quality .quality_title h4 {
-    font-size: 24px;
+    font-size: 23px;
     font-family: "d-b";
   }
 
