@@ -68,7 +68,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className={classes.card_selected}>
         <div className="container">
           <div className="row">
